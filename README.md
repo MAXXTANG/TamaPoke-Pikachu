@@ -1,6 +1,6 @@
 # TamaPoke 1.19-pika
 
-皮卡丘內建圖像版的私人留存，適用 **Waveshare ESP32-S3-Touch-AMOLED-1.75**（16 MB Flash、8 MB OPI PSRAM）。
+皮卡丘內建圖像版的公開備份，適用 **Waveshare ESP32-S3-Touch-AMOLED-1.75**（16 MB Flash、8 MB OPI PSRAM）。
 
 基於 [socquique/TamaPoke](https://github.com/socquique/TamaPoke) 的 [`00136942`](https://github.com/socquique/TamaPoke/commit/00136942f42c651ceb75fbfef8499a2df945cde7)，保留原作者授權與署名。
 
@@ -51,7 +51,25 @@ python3 -m esptool --chip esp32s3 --port /dev/cu.usbmodem1101 \
 python3 tools/select_pikachu.py --port /dev/cu.usbmodem1101
 ```
 
-韌體檔包含遊戲程式與內建圖像。全新安裝後執行選角工具，才會直接設定為皮卡丘。個人的遊戲存檔與完整 Flash 備份保留在本機。
+韌體檔包含遊戲程式與內建圖像。全新安裝後執行選角工具，才會直接設定為皮卡丘。公開韌體不含個人的遊戲存檔；原機 Flash 與存檔另有下述加密封存。
+
+## 2026-11-21 專案封存
+
+[archive-2026-11-21](https://github.com/MAXXTANG/TamaPoke-Pikachu/releases/tag/archive-2026-11-21) 提供公開專案 ZIP、AES-256-GCM 加密封存與 SHA-256 校驗檔。封存清單見 `backup/2026-11-21.json`。
+
+- 公開原始碼、固定版本韌體、圖像、署名與重建說明保存在本倉庫及公開 ZIP。
+- 加密封存保留原工作目錄中的原機 Flash、個人存檔、來源檔案、原始圖像包、操作腳本與紀錄。還原金鑰由擁有者另外保存，沒有上傳到倉庫或 Release。
+- 可重新下載的 Arduino 套件、編譯工具與可重新產生的 build、ELF、map 等產物不納入封存；重建版本與步驟見下節。
+
+擁有者可下載加密附件與自己的金鑰 JSON，安裝 `cryptography` 後解密成 `.tar.gz`。工具只寫出已驗證的封存檔，不會自動解壓或寫入硬體：
+
+```bash
+python3 -m pip install cryptography
+python3 tools/decrypt_archive.py \
+  --key-file /path/to/TamaPoke-restore-key-20261121.json \
+  --input TamaPoke-private-backup-2026-11-21.tar.gz.aesgcm \
+  --output TamaPoke-private-backup-2026-11-21.tar.gz
+```
 
 ## 原始碼與重建
 

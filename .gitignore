@@ -14,3 +14,5 @@ arduino-cli.yaml
 firmware-full-*.bin
 *.partial
 install.log
+*restore-key*.json
+*.tar.gz.aesgcm

@@ -1,0 +1,19 @@
+{
+  "archived_at": "2026-11-21T10:17:19.781255+08:00",
+  "release_tag": "archive-2026-11-21",
+  "source_base_commit": "5c58268a35fdfe8389151b40897e5c530ead892e",
+  "encrypted_backup": {
+    "file": "TamaPoke-private-backup-2026-11-21.tar.gz.aesgcm",
+    "size_bytes": 9502469,
+    "sha256": "02a1243dfe3c2f1082859ad4320a3b2a63c9a2f711a322c74542be759b552a2e",
+    "encryption": "AES-256-GCM",
+    "key_location": "Stored separately by the owner; not in this repository or its releases",
+    "included_files": 193,
+    "verification": "Decrypt roundtrip and every archived file SHA-256 checked"
+  },
+  "exclusions": [
+    "Arduino toolchain, downloaded packages and installed libraries",
+    "build directories, ELF/map/object/static library debug outputs",
+    "Git metadata, Python bytecode and OS cache metadata"
+  ]
+}
