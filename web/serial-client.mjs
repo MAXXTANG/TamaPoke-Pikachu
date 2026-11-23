@@ -101,8 +101,17 @@ export function localClockEpoch(date = new Date()) {
 
 export async function activatePikachu({ serialApi, onStatus = () => {}, date = new Date(), timeout = 6000 }) {
   if (!serialApi) throw new Error("請使用電腦版 Chrome 或 Edge 開啟本頁。");
-  onStatus("請在跳出的視窗選擇 USB JTAG/serial debug unit。");
-  const port = await serialApi.requestPort({ filters: [{ usbVendorId: 0x303a }] });
+  onStatus("正在尋找剛刷機時已授權的開發板。");
+  const granted = typeof serialApi.getPorts === "function" ? await serialApi.getPorts() : [];
+  const compatible = granted.filter((port) => port.getInfo?.().usbVendorId === 0x303a);
+  let port;
+  if (compatible.length === 1) {
+    port = compatible[0];
+    onStatus("已找到授權的開發板，正在連接。");
+  } else {
+    onStatus("請在跳出的視窗選擇 USB JTAG/serial debug unit。");
+    port = await serialApi.requestPort({ filters: [{ usbVendorId: 0x303a }] });
+  }
   const connection = new DeviceConnection(port, { timeout });
   try {
     await connection.open();

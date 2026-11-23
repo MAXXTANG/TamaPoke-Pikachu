@@ -34,7 +34,44 @@ class FakePort {
     this.signals = signals;
   }
   async close() { this.closed = true; }
+  getInfo() { return { usbVendorId: this.vendorId ?? 0x303a }; }
 }
+
+test("activation reuses the one already authorized Espressif board without another chooser", async () => {
+  const port = new FakePort();
+  let chooserCalls = 0;
+  const result = await activatePikachu({ serialApi: {
+    getPorts: async () => [port],
+    requestPort: async () => { chooserCalls++; throw new Error("Should reuse permission"); },
+  }, timeout: 150 });
+  assert.equal(result.species, 25);
+  assert.equal(chooserCalls, 0);
+  assert.equal(port.closed, true);
+});
+
+test("more than one authorized board still requires the visitor to choose", async () => {
+  const first = new FakePort(), selected = new FakePort();
+  let chooserCalls = 0;
+  await activatePikachu({ serialApi: {
+    getPorts: async () => [first, selected],
+    requestPort: async () => { chooserCalls++; return selected; },
+  }, timeout: 150 });
+  assert.equal(chooserCalls, 1);
+  assert.equal(first.commands.length, 0);
+  assert.ok(selected.commands.includes("SPEC 25"));
+});
+
+test("an authorized device from another USB vendor is not selected automatically", async () => {
+  const unrelated = new FakePort(), selected = new FakePort();
+  unrelated.vendorId = 0x10c4;
+  let chooserCalls = 0;
+  await activatePikachu({ serialApi: {
+    getPorts: async () => [unrelated],
+    requestPort: async () => { chooserCalls++; return selected; },
+  }, timeout: 150 });
+  assert.equal(chooserCalls, 1);
+  assert.equal(unrelated.commands.length, 0);
+});
 
 test("fresh starter screen becomes persisted Pikachu and loads its sprite", async () => {
   const port = new FakePort();
