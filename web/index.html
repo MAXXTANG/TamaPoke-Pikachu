@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#14222c">
+  <meta name="description" content="用微雪 Waveshare ESP32-S3-Touch-AMOLED-1.75 開發板，直接從瀏覽器安裝 TamaPoke 皮卡丘版。附完整介面圖解與新手玩法。">
+  <title>TamaPoke 皮卡丘｜網頁刷機與新手圖解</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/bolt.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./vendor/esp-web-tools-10.4.0/install-button.js"></script>
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">ϟ</span><span>TamaPoke<small>PIKACHU EDITION</small></span></a>
+    <nav aria-label="主要導覽">
+      <a href="#install">網頁刷機</a><a href="#play">怎麼玩</a><a href="#screens">介面圖解</a><a href="#faq">常見問題</a>
+    </nav>
+    <a class="repo-link" href="https://github.com/MAXXTANG/TamaPoke-Pikachu">GitHub 原始碼</a>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">一塊開發板，一位口袋夥伴</p>
+        <h1>把皮卡丘，<br><span>養在手心裡。</span></h1>
+        <p class="hero-lead">插上 USB，在瀏覽器刷入遊戲。<br>餵食、陪玩、洗澡，再看牠慢慢成長。</p>
+        <p class="hero-board"><span>適用微雪 Waveshare 開發板</span><strong>ESP32-S3-Touch-AMOLED-1.75</strong></p>
+        <div class="hero-actions"><a class="button primary" href="#install">開始網頁刷機</a><a class="button ghost" href="#play">第一次玩，看這裡</a></div>
+        <p class="hero-small">不需要 Arduino IDE 或程式經驗 · 皮卡丘動畫不用 microSD</p>
+      </div>
+      <div class="hero-device">
+        <span class="orbit orbit-one" aria-hidden="true"></span><span class="orbit orbit-two" aria-hidden="true"></span>
+        <img src="./assets/screens/home.png" alt="TamaPoke 皮卡丘主畫面：需求條與四個照顧按鈕，為同版程式渲染示例" width="466" height="466" fetchpriority="high">
+        <div class="device-label"><strong>PIKACHU #025</strong><span>v1.19-pika · 466 × 466 AMOLED</span></div>
+      </div>
+    </section>
+
+    <section class="hardware section-wrap" id="hardware" aria-labelledby="hardware-title">
+      <div><p class="eyebrow">先認對你的開發板</p><h2 id="hardware-title">本次使用：微雪 Waveshare<br><span>ESP32-S3-Touch-AMOLED-1.75</span></h2></div>
+      <div class="hardware-copy"><p>原版 1.75 吋圓形 AMOLED 觸控開發板，16 MB Flash、8 MB OPI PSRAM。<strong>要核對完整型號，只有「ESP32-S3」字樣還不夠。</strong></p><p class="hardware-note">1.75C 是不同板型，請勿使用本頁韌體。</p><a href="https://www.waveshare.com/wiki/ESP32-S3-Touch-AMOLED-1.75" target="_blank" rel="noopener">查看微雪官方板型資料</a></div>
+    </section>
+
+    <section class="section-wrap prepare" aria-labelledby="prepare-title">
+      <div class="section-heading"><p class="eyebrow">第一次也能跟著做</p><h2 id="prepare-title">準備好這三樣，就能開始。</h2></div>
+      <div class="prepare-grid">
+        <div><span class="prepare-icon" aria-hidden="true">▣</span><h3>相容的微雪開發板</h3><p>核對上面的完整型號。電池、喇叭與 microSD 都不是玩皮卡丘的必要條件。</p></div>
+        <div><span class="prepare-icon" aria-hidden="true">⌁</span><h3>可以傳資料的 USB 線</h3><p>用 USB 將開發板接到電腦。只有充電功能的線，瀏覽器不會找到裝置。</p></div>
+        <div><span class="prepare-icon" aria-hidden="true">◎</span><h3>電腦版 Chrome 或 Edge</h3><p>開啟這個網頁即可。手機可以看教學，刷機請在電腦上操作。</p></div>
+      </div>
+    </section>
+
+    <section id="install" class="install-section">
+      <div class="section-wrap">
+        <div class="section-heading"><p class="eyebrow">用 USB 帶牠回家</p><h2>兩步完成，接著就能玩。</h2><p>全新安裝會重設板上原有的程式與遊戲進度。先確認型號，再依序完成下面兩步。</p></div>
+        <p id="browser-note" class="notice" role="status" hidden></p>
+        <div class="install-grid">
+          <article class="install-card">
+            <span class="step-label">步驟 1</span><h3>刷入 TamaPoke 韌體</h3>
+            <ol><li>接上 USB，勾選下面兩項確認。</li><li>按「刷入遊戲」，選擇 <code>USB JTAG/serial debug unit</code>。</li><li>在刷機視窗選 <code>Install</code>，等到完成後關閉視窗。</li></ol>
+            <div class="checks"><label><input class="install-check" id="correct-board" type="checkbox"><span>我的板子是 <strong>ESP32-S3-Touch-AMOLED-1.75 原版</strong>。</span></label><label><input class="install-check" id="erase-consent" type="checkbox"><span>我知道這次安裝會<strong>清除原有程式與存檔</strong>。</span></label></div>
+            <esp-web-install-button manifest="./manifest.json"><button id="install-button" class="button dark" type="button" slot="activate" disabled>刷入遊戲</button><span slot="unsupported" class="notice">請改用支援 USB 序列埠的電腦版 Chrome 或 Edge。</span><span slot="not-allowed" class="notice">請使用本頁的 HTTPS 網址。</span></esp-web-install-button>
+            <p id="package-status" class="package-status" role="status">正在準備韌體檔案…</p>
+          </article>
+          <article class="install-card activation-card">
+            <span class="step-label">步驟 2</span><h3>叫出你的皮卡丘</h3>
+            <ol><li>保持 USB 連接，先關閉上一步的刷機視窗。</li><li>按下面按鈕，再次選擇同一塊開發板。</li><li>網頁會設定皮卡丘、儲存角色，並同步電腦的當地時間。</li></ol>
+            <div class="activation-illustration"><img src="./assets/screens/profile.png" alt="皮卡丘角色資料頁示例" width="466" height="466"><p>看到御三家選角畫面也沒關係，<br>這一步會直接幫你設定皮卡丘。</p></div>
+            <button id="activate-button" class="button primary" type="button">連接並啟用皮卡丘</button>
+            <p id="activation-status" class="activation-status" role="status" aria-live="polite">完成刷入後，按這裡啟用角色。</p>
+          </article>
+        </div>
+        <div id="setup-complete" class="setup-complete" hidden><strong>皮卡丘已準備好。</strong><p>如果裝置有電池，現在就能拔除 USB；沒有電池時保持 USB 供電。接著看下面的日常照顧方式。</p><a href="#play">開始認識遊戲</a></div>
+        <p class="install-help">找不到裝置、連接埠忙碌或刷機失敗？<a href="#faq">先看排解方法</a>。已有存檔、想保留進度更新的使用者，請看 <a href="https://github.com/MAXXTANG/TamaPoke-Pikachu#進階更新與重建">進階更新方式</a>。</p>
+      </div>
+    </section>
+
+    <section id="play" class="section-wrap play-section">
+      <div class="section-heading"><p class="eyebrow">先學會這四個按鈕</p><h2>每天一點照顧，<br>就是牠最喜歡的日常。</h2><p>按鈕在螢幕下方，由左到右排列。想摸摸皮卡丘，輕點角色後放開就好。</p></div>
+      <div class="care-grid">
+        <article><span aria-hidden="true">🍎</span><h3>餵食</h3><p>點食物，再選樹果。<strong>皮卡丘喜歡藍樹果</strong>；糖果偶爾吃就好。</p></article>
+        <article><span aria-hidden="true">⚾</span><h3>陪玩</h3><p>點精靈球開始小遊戲，點球讓它留在空中。三次落地後結算。</p></article>
+        <article><span aria-hidden="true">☾</span><h3>睡覺</h3><p>點燈泡入睡、再點喚醒。出現 <strong>Zz</strong> 才是睡著，關螢幕不算。</p></article>
+        <article><span aria-hidden="true">🫧</span><h3>洗澡</h3><p>點最右邊按鈕，等三秒泡泡動畫結束，清潔就會恢復。</p></article>
+      </div>
+      <div class="needs-guide"><h3>四條需求，越高越好。</h3><div><p><strong>FOOD</strong><span>飽足：餵樹果</span></p><p><strong>JOY</strong><span>心情：摸摸與陪玩</span></p><p><strong>ENE</strong><span>精力：按燈泡睡覺</span></p><p><strong>HYG</strong><span>清潔：按洗澡</span></p></div><p class="small-copy">夜間背景不代表已經睡著。清醒時需求會持續下降，長時間休息前記得先讓角色睡覺。</p></div>
+      <div class="gesture-strip"><h3>用手指探索更多。</h3><p><strong>向上滑</strong> 看角色資料<br><strong>左右滑</strong> 看圖鑑<br><strong>向下滑</strong> 設定時間與聲音</p><p><strong>輕點角色</strong> 摸摸<br><strong>長按角色三秒</strong> 開放生確認<br><strong>短按 PWR</strong> 關閉或喚醒螢幕</p><a class="button outline" href="https://github.com/MAXXTANG/TamaPoke-Pikachu/blob/main/docs/PLAYING.md">閱讀完整玩法教學</a></div>
+    </section>
+
+    <section id="screens" class="screens-section">
+      <div class="section-wrap">
+        <div class="section-heading"><p class="eyebrow">每一頁，知道怎麼進也知道怎麼回</p><h2>完整遊戲介面圖解</h2><p>點圖片或「看操作方式」，就能查看這一頁的用法。</p></div>
+        <p class="source-note">圖片由 <strong>同版遊戲原始繪圖程式</strong> 在電腦渲染，使用示例數值；不是開發板實拍。裝置預設英文，中文說明放在圖旁。</p>
+        <div class="screen-filters" role="group" aria-label="介面分類"><button class="screen-filter" data-filter="all" aria-pressed="true">全部介面</button><button class="screen-filter" data-filter="daily" aria-pressed="false">日常照顧</button><button class="screen-filter" data-filter="card" aria-pressed="false">角色資料</button><button class="screen-filter" data-filter="games" aria-pressed="false">遊戲與訓練</button><button class="screen-filter" data-filter="collection" aria-pressed="false">圖鑑與設定</button><button class="screen-filter" data-filter="growth" aria-pressed="false">成長與告別</button></div>
+        <p id="screen-count" class="screen-count" aria-live="polite">22 個介面示例</p>
+        <div id="screen-gallery" class="screen-gallery"></div>
+      </div>
+    </section>
+
+    <section id="faq" class="section-wrap faq-section">
+      <div class="section-heading"><p class="eyebrow">遇到問題，先看這裡</p><h2>第一次刷機，常見的幾件事。</h2></div>
+      <details><summary>選擇裝置的視窗是空的，或沒有 USB 裝置？</summary><p>先換一條確定可以傳資料的 USB 線，直接接電腦，避免先經過集線器。確認開發板有供電。仍沒有裝置時，可依微雪官方板卡文件進入 BOOT 下載模式，再回來重試。</p></details>
+      <details><summary>顯示連接埠忙碌，或啟用皮卡丘時沒有回覆？</summary><p>同一個 USB 連接埠一次只能由一個程式使用。關閉刷機彈窗、其他網頁的序列埠連線、Arduino 序列監控等程式，再按「連接並啟用皮卡丘」。若裝置剛重開，等三秒再試。</p></details>
+      <details><summary>刷完還是御三家選角或蛋，怎麼辦？</summary><p>保留 USB 連接，完成上面的第二步「連接並啟用皮卡丘」。它會直接設定 #25 並存檔，不需要自己輸入任何指令。</p></details>
+      <details><summary>沒有 microSD，可以玩嗎？151 隻都內建嗎？</summary><p>可以玩皮卡丘。本版內建 #25 皮卡丘與 #26 雷丘的一般／異色動畫，#1–9 另有簡單備用圖。其他角色動畫及完整圖鑑縮圖需要相應的 microSD 素材，這個刷機流程不會自動載入 151 隻素材。</p></details>
+      <details><summary>螢幕變暗或關掉，是不是當機？</summary><p>AMOLED 閒置後會自動降低亮度，先點一下喚醒。短按 PWR 也可切換螢幕。若確實全黑且無回應，檢查供電、完整板型及刷機是否完成，再依官方板卡說明重新啟動。</p></details>
+      <details><summary>拔掉 USB 後就關機？</summary><p>開發板沒有裝電池時，需要 USB 持續供電。只有接妥相容電池時，才可以拔掉 USB 繼續玩。</p></details>
+      <details><summary>可以用中文玩嗎？</summary><p>教學與刷機頁是繁體中文。裝置遊戲本身目前提供英、西、法、德、義、葡、日、韓八種語言，預設英文，沒有中文選項。</p></details>
+      <details><summary>時間不對，或一直是晚上？</summary><p>網頁啟用時會同步電腦的當地時間。也可以主畫面向下滑，調整小時和分鐘，再按 OK。想讓角色睡覺仍要按燈泡；夜景與睡眠是兩件事。</p></details>
+      <details><summary>長按 PWR 與短按有什麼不同？</summary><p>這款原版 1.75 板短按是切換螢幕，長按約四秒是關機。1.75C 的三連按鎖屏等操作不適用這一版。</p></details>
+      <details><summary>目前哪些部分已驗證？</summary><p>保存的 1.19-pika 應用程式已在相容開發板完成寫入校驗、開機、皮卡丘載入及重開機存檔檢查。網頁與 USB 通訊程式有自動檢查；本次沒有接上實體開發板，所以透過此網頁完成整包 USB 刷入的實機驗證仍待補上。遊戲圖是程式渲染示例。</p></details>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><div><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">ϟ</span><span>TamaPoke<small>PIKACHU EDITION</small></span></a><p>微雪 ESP32-S3-Touch-AMOLED-1.75 · v1.19-pika</p></div><div class="footer-links"><a href="https://github.com/MAXXTANG/TamaPoke-Pikachu">原始碼與下載</a><a href="https://github.com/socquique/TamaPoke">原作 TamaPoke</a><a href="https://github.com/MAXXTANG/TamaPoke-Pikachu/blob/main/THIRD_PARTY_NOTICES.md">授權與素材署名</a></div><p class="legal">個人、非商業粉絲專案。程式沿用 MIT；圖像依 PMD SpriteCollab 署名與非商業條件使用。Pokémon © Nintendo / Game Freak / The Pokémon Company。本頁不將裝置回覆上傳伺服器。</p></footer>
+
+  <dialog id="screen-modal" aria-labelledby="screen-modal-title"><button id="screen-modal-close" class="modal-close" type="button" aria-label="關閉介面圖解">×</button><div class="modal-layout"><img id="screen-modal-image" src="./assets/screens/home.png" alt="遊戲介面示例" width="466" height="466"><div><p class="eyebrow">遊戲介面圖解</p><h2 id="screen-modal-title">主畫面</h2><p id="screen-modal-description"></p><dl><dt>怎麼進入</dt><dd id="screen-modal-enter"></dd><dt>怎麼返回</dt><dd id="screen-modal-exit"></dd></dl><p class="small-copy">同版原始繪圖程式渲染，數值為示例，非硬體實拍。</p></div></div></dialog>
+  <noscript><p class="notice">網頁刷機與互動圖解需要 JavaScript。你也可以在 <a href="https://github.com/MAXXTANG/TamaPoke-Pikachu/blob/main/docs/PLAYING.md">GitHub 閱讀完整圖解</a>。</p></noscript>
+</body>
+</html>

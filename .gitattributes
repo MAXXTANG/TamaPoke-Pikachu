@@ -3,3 +3,6 @@
 TamaPoke/embedded_mon.cpp linguist-generated=true
 *.patch -whitespace
 evidence/*.log -whitespace
+web/vendor/** linguist-vendored=true
+web/vendor/** -whitespace
+tools/ui-render/glcdfont.h linguist-vendored=true

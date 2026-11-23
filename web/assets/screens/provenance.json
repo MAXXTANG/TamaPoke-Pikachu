@@ -1,0 +1,98 @@
+{
+  "kind": "host-rendered UI examples; not physical-device photographs",
+  "firmware_version": "1.19-pika",
+  "drawing_code": "TamaPoke/TamaPoke.ino, render section extracted unchanged",
+  "drawing_code_sha256": "0e4ce75f979ffb05d0845d2f4d9c33dc7055a1f556b6bd82ba3774b4ca2f5cf6",
+  "fixture": "deterministic demonstration stats, clock, battery and scene flags; no personal saved game",
+  "adapter": "tools/ui-render/canvas.h (host RGB565 adapter; English classic bitmap font)",
+  "images": [
+    {
+      "file": "bath.png",
+      "sha256": "64622f30b0a1e1457ca972d88f6501f0317cb391c33a76185c0f371934de6aef"
+    },
+    {
+      "file": "eating.png",
+      "sha256": "36618adf63a4cd08366585f16625312ebae1b53def0fa814b8906af5cefdc2e1"
+    },
+    {
+      "file": "egg.png",
+      "sha256": "1049393dd9c061569e6311dde8ebbdfffe6adb5de8d80466527c20fa50e63466"
+    },
+    {
+      "file": "evolution.png",
+      "sha256": "7c81c2b9addf3c4825539fc65cc1fca61c9beb9376fc7933ecfbadf0773054e2"
+    },
+    {
+      "file": "farewell.png",
+      "sha256": "87c9128b5bc7c901754848fce6ecdaf5d8dab2fea8b934b2d4f42345cbc217a2"
+    },
+    {
+      "file": "feeding.png",
+      "sha256": "8a6673982f4c8ece83f1b6bdc562ea913443150847fe0aa47b3ce7191a183523"
+    },
+    {
+      "file": "game-results.png",
+      "sha256": "8aae9196b9d547eabd5746c199a21a1849e2fe95dd4f0419e863e3688b237bbc"
+    },
+    {
+      "file": "home.png",
+      "sha256": "a587a478fc0e306356a1b74dc74a772d257172fdf7966dc66b4819f4580fe667"
+    },
+    {
+      "file": "medals.png",
+      "sha256": "963e1db52782540bab189d472255093c1c8f741cdea66cafc95a6606218bd849"
+    },
+    {
+      "file": "minigame.png",
+      "sha256": "1a26b74d8c38e6f749e19f5cc0b7e370aef45eec58fa53972c22f5aa554b05cb"
+    },
+    {
+      "file": "pokedex-detail.png",
+      "sha256": "ecd18191c4e2f7ec6b54d6e16bff23151e7ee5b8b9dea7e01ff2345efa154055"
+    },
+    {
+      "file": "pokedex.png",
+      "sha256": "276fbc1769434c578e0d8e8c798db350bd37c7c207818f3b43e57fefb6ae74f2"
+    },
+    {
+      "file": "profile.png",
+      "sha256": "2ec516e4bd25feaca0072d9a4dda6e540235694ed62005151cac3f9ac74d97fe"
+    },
+    {
+      "file": "progress.png",
+      "sha256": "03d87bcd2d15eac3ace66714bdeaaefe2bc3d3de9c1b253e9f12be4a70a946fd"
+    },
+    {
+      "file": "release.png",
+      "sha256": "ec7146efbb68c6d5c4393ea47fbd092863f53433b0a0d9a2a96021b9d861bea3"
+    },
+    {
+      "file": "rename.png",
+      "sha256": "d68b4b5e2c8264e2785adc622de01078072bfa898684058f2967560aa81cf650"
+    },
+    {
+      "file": "runaway.png",
+      "sha256": "5721ae717f15e4ae3edfb90727be6bc10ce20f94b394bd982efd4e385ff3d2c8"
+    },
+    {
+      "file": "settings.png",
+      "sha256": "da6b4d69a17da11ef80973c18571a7e850d1a26c0820eaaff750cf6dbfabc114"
+    },
+    {
+      "file": "sleep.png",
+      "sha256": "17d81f3e121fd85b4d41c770f8705093e46765ac30450deb743bfa38ddce8d8f"
+    },
+    {
+      "file": "starter.png",
+      "sha256": "2dcc3a63a2ec2a9c5695f75d8efbfb02c6f0a12b4268f05c826bfdceafb18275"
+    },
+    {
+      "file": "stats.png",
+      "sha256": "99a796d940a49ab5a88ea1c74700308b0e99eb77972371da54c30f45adff36ec"
+    },
+    {
+      "file": "training.png",
+      "sha256": "3403e485b8cb3f42c069f11e76b8dd57fd94fbbf8bddb4229910dd4584275b23"
+    }
+  ]
+}

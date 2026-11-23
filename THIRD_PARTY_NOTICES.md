@@ -7,3 +7,9 @@
 - **Dependencies:** Arduino-ESP32 / Espressif, Arduino_GFX / moononournation, SensorLib and XPowersLib / Lewis He, U8g2 / olikraus. Dependencies retain their own licenses and are installed separately.
 
 The MIT license for the source code does not relicense the embedded sprite artwork. Full original project credits are preserved in [docs/UPSTREAM_CREDITS.md](docs/UPSTREAM_CREDITS.md).
+
+## Browser installer and UI documentation
+
+- ESP Web Tools **10.4.0**, Apache-2.0, from the official npm package. The bundled browser files and full license are preserved in `web/vendor/esp-web-tools-10.4.0/`; original dependency notices within those bundles are retained. Source: https://github.com/esphome/esp-web-tools.
+- The host UI renderer uses the Adafruit GFX classic 5×7 bitmap font, BSD licensed. The original file header and full license are retained in `tools/ui-render/glcdfont.h` and `FONT-LICENSE.txt`. The English UI uses this classic glyph set; CJK font rendering is not emulated.
+- Game interface illustrations are produced from the unchanged render section of this fork's firmware with deterministic demonstration inputs. They are not photographs or captures from a connected ESP32. Image provenance is recorded in `web/assets/screens/provenance.json`.

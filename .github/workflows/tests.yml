@@ -21,3 +21,10 @@ jobs:
       - name: Verify firmware checksums
         working-directory: firmware
         run: sha256sum -c SHA256SUMS
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify Web Serial setup and recovery paths
+        run: node --test test/web-serial.test.mjs
+      - name: Verify beginner website and firmware package
+        run: python3 tools/check_web.py

@@ -1,111 +1,97 @@
-# TamaPoke 1.19-pika
+# TamaPoke 皮卡丘版
 
-皮卡丘內建圖像版的公開備份，適用 **Waveshare ESP32-S3-Touch-AMOLED-1.75**（16 MB Flash、8 MB OPI PSRAM）。
+**拿一塊微雪開發板，用 USB 和瀏覽器就能刷入，接著開始照顧皮卡丘。**
 
-基於 [socquique/TamaPoke](https://github.com/socquique/TamaPoke) 的 [`00136942`](https://github.com/socquique/TamaPoke/commit/00136942f42c651ceb75fbfef8499a2df945cde7)，保留原作者授權與署名。
+## 新手從這裡開始
 
-這版將皮卡丘 #25、雷丘 #26 的一般與異色動畫放進韌體，缺少 microSD 圖像時直接使用內建資料。`SPEC 25` 指令會切換成一般皮卡丘、離開初始選角畫面並立即存檔。其他未內建的角色仍需 microSD 圖像。
+### [開啟網頁刷機與完整介面圖解](https://maxxtang.github.io/TamaPoke-Pikachu/)
 
-![內建皮卡丘動畫的第一幀](assets/p025-preview.png)
+不需要 Arduino IDE、Python 或程式經驗。用電腦版 Chrome／Edge，依序完成：
 
-## 已保存的版本
+1. 接上 USB、核對完整板型。
+2. 在網頁按「刷入遊戲」，等完成後關閉刷機視窗。
+3. 按「連接並啟用皮卡丘」，自動設定角色、存檔與當地時間。
+4. 看 [第一次安裝教學](docs/GETTING_STARTED.md) 與 [完整玩法圖解](docs/PLAYING.md)，開始餵食、陪玩、洗澡和休息。
 
-[v1.19-pika 下載頁](https://github.com/MAXXTANG/TamaPoke-Pikachu/releases/tag/v1.19-pika) 提供韌體與完整留存 ZIP。
+**全新安裝會清除板上原有程式與存檔。沒有電池時請保持 USB 供電。**
 
-| 檔案 | 燒錄位址 | 用途與驗證 |
+![網頁刷機與教學首頁](docs/images/web-home.jpg)
+
+## 目前使用的開發板
+
+**微雪 Waveshare ESP32-S3-Touch-AMOLED-1.75 原版開發板**：
+
+| 項目 | 規格 |
+| --- | --- |
+| 晶片 | ESP32-S3 |
+| 螢幕 | 1.75 吋、466 × 466 圓形 AMOLED，CO5300 |
+| 觸控 | CST9217 |
+| Flash / PSRAM | 16 MB / 8 MB OPI PSRAM |
+| 本次韌體 | `1.19-pika` |
+
+**1.75C 是不同板型，不適用本頁韌體。** 其他僅標示 ESP32-S3 的開發板也不代表相容。見 [微雪官方板卡資料](https://www.waveshare.com/wiki/ESP32-S3-Touch-AMOLED-1.75)。
+
+## 遊戲畫面與玩法
+
+以下為 **同版原始繪圖程式產生的介面示例，不是硬體實拍**；數值與狀態為示例。網頁提供 22 張可點開的介面與操作說明，包含主畫面、餵食、睡眠、洗澡、小遊戲、訓練、角色卡四頁、圖鑑、設定、命名、初始選角、蛋與成長／告別確認。
+
+| 日常照顧 | 角色資料 |
+| --- | --- |
+| ![主畫面示例](web/assets/screens/home.png) | ![角色資料示例](web/assets/screens/profile.png) |
+| ![餵食選單示例](web/assets/screens/feeding.png) | ![設定介面示例](web/assets/screens/settings.png) |
+
+- **主畫面四按鈕**：食物、精靈球小遊戲、燈泡睡眠、洗澡。
+- **需求條**：FOOD 飽足、JOY 心情、ENE 精力、HYG 清潔，越高越好。
+- **向上滑**：角色卡，左右滑切換資料、能力、勳章與進度。
+- **左右滑**：圖鑑；**向下滑**：時間、音量、亮度與語言。
+- **輕點角色**：摸摸；**長按三秒**：放生確認。短按 PWR 只切換螢幕，不等於睡眠。
+
+裝置預設英文，共有英、西、法、德、義、葡、日、韓八種語言，**沒有中文選項**；網站與教學用繁體中文逐項解說。
+
+本版內建 #25 皮卡丘、#26 雷丘的一般／異色動畫，**玩皮卡丘不需要 microSD**。#1–9 另有簡單備用圖。完整 151 隻動畫及圖鑑縮圖不是全部內建，仍需相應 microSD 素材。
+
+## 版本與下載
+
+[固定韌體 v1.19-pika](https://github.com/MAXXTANG/TamaPoke-Pikachu/releases/tag/v1.19-pika) 包含實機驗證的應用程式、全新安裝映像、原始碼 ZIP 與 SHA-256。
+
+| 檔案 | 位址 | 用途 |
 | --- | --- | --- |
-| `firmware/tamapoke-1.19-pika-app.bin` | `0x10000` | 本次實際刷入的檔案；寫入雜湊校驗、開機及重開機後角色保存已驗證。適用已有相同 TamaPoke 分割表的板子。 |
-| `firmware/tamapoke-1.19-pika-factory.bin` | `0x0` | 原版 v1.19 開機區與分割表，加上相同自訂應用程式；供全新安裝。這個整合檔尚未整包重刷驗證。 |
-| `firmware/SHA256SUMS` | — | 兩個韌體檔的 SHA-256。 |
+| `firmware/tamapoke-1.19-pika-app.bin` | `0x10000` | 已有相同分割表時更新，這是當次實際刷入與校驗的應用程式 |
+| `firmware/tamapoke-1.19-pika-factory.bin` | `0x0` | 全新安裝映像；網頁使用的就是這個固定檔案 |
 
-實機驗證的應用程式 SHA-256：
+網頁刷機包與保存版本逐位元相同。應用程式 SHA-256：
 
 ```text
 d5da1d790d8794f92d8db0ff8cbbcffaaeb5ca0e3b7642451944a94e2133edbe
 ```
 
-## 刷回這版
+## 驗證與圖片來源
 
-在倉庫根目錄執行。將連接埠換成電腦實際辨識到的名稱；macOS 例如 `/dev/cu.usbmodem1101`。
+- 保存的應用程式已在相容板完成寫入校驗、啟動、無 microSD 皮卡丘載入與重開機存檔檢查。
+- 原有 162 項主機遊戲測試與 sanitizer 檢查通過。
+- 網頁另檢查 Web Serial 狀態辨識、取消、逾時、錯誤復原與當地時間換算，以及檔案／圖片完整性。
+- 本次未連接實體開發板，經由此網站整包刷機與啟用的 USB 實機驗證仍待補上。
+- 遊戲圖由 `tools/render_ui.py` 擷取實際繪圖程式、配合主機 RGB565 繪圖轉接器產生。示例值不是個人存檔，圖片來源見 `web/assets/screens/provenance.json`。
+- `docs/images/` 為實際網頁介面截圖。
 
-```bash
-python3 -m pip install esptool==5.3.0 pyserial
-cd firmware
-shasum -a 256 -c SHA256SUMS
-cd ..
-```
+## 進階更新與重建
 
-已有相同 TamaPoke 分割表時，更新應用程式可保留現有存檔：
+想保留已有存檔、從指令列刷回、重建原始碼或查看加密歷史封存，請看 [進階更新、重建與歷史封存](docs/ADVANCED.md)。
 
-```bash
-python3 -m esptool --chip esp32s3 --port /dev/cu.usbmodem1101 \
-  write-flash 0x10000 firmware/tamapoke-1.19-pika-app.bin
-python3 tools/select_pikachu.py --port /dev/cu.usbmodem1101
-```
+`web/` 是可直接部署的靜態網站，ESP Web Tools 10.4.0 隨站保存；`.github/workflows/pages.yml` 部署至 GitHub Pages。此網頁不自動載入全部 microSD 素材。
 
-全新安裝會清除板內存檔與設定；使用相容的 1.75 板型：
+本機檢查：
 
 ```bash
-python3 -m esptool --chip esp32s3 --port /dev/cu.usbmodem1101 \
-  write-flash --erase-all 0x0 firmware/tamapoke-1.19-pika-factory.bin
-python3 tools/select_pikachu.py --port /dev/cu.usbmodem1101
-```
-
-韌體檔包含遊戲程式與內建圖像。全新安裝後執行選角工具，才會直接設定為皮卡丘。公開韌體不含個人的遊戲存檔；原機 Flash 與存檔另有下述加密封存。
-
-## 2026-11-21 專案封存
-
-[archive-2026-11-21](https://github.com/MAXXTANG/TamaPoke-Pikachu/releases/tag/archive-2026-11-21) 提供公開專案 ZIP、AES-256-GCM 加密封存與 SHA-256 校驗檔。封存清單見 `backup/2026-11-21.json`。
-
-- 公開原始碼、固定版本韌體、圖像、署名與重建說明保存在本倉庫及公開 ZIP。
-- 加密封存保留原工作目錄中的原機 Flash、個人存檔、來源檔案、原始圖像包、操作腳本與紀錄。還原金鑰由擁有者另外保存，沒有上傳到倉庫或 Release。
-- 可重新下載的 Arduino 套件、編譯工具與可重新產生的 build、ELF、map 等產物不納入封存；重建版本與步驟見下節。
-
-擁有者可下載加密附件與自己的金鑰 JSON，安裝 `cryptography` 後解密成 `.tar.gz`。工具只寫出已驗證的封存檔，不會自動解壓或寫入硬體：
-
-```bash
-python3 -m pip install cryptography
-python3 tools/decrypt_archive.py \
-  --key-file /path/to/TamaPoke-restore-key-20261121.json \
-  --input TamaPoke-private-backup-2026-11-21.tar.gz.aesgcm \
-  --output TamaPoke-private-backup-2026-11-21.tar.gz
-```
-
-## 原始碼與重建
-
-`TamaPoke/` 為實際編譯使用的原始碼；`assets/` 保存四份原始 TPK2 圖像。以下版本對應這次建置：
-
-- ESP32 Arduino core：`3.3.12`。
-- GFX Library for Arduino：`1.6.9`。
-- SensorLib：`0.5.1`。
-- XPowersLib：`0.3.3`。
-- U8g2：`2.36.19`。
-
-```bash
-arduino-cli core update-index --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
-arduino-cli core install esp32:esp32@3.3.12 --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
-arduino-cli lib install 'GFX Library for Arduino@1.6.9' 'SensorLib@0.5.1' 'XPowersLib@0.3.3' 'U8g2@2.36.19'
-bash tools/build.sh
-```
-
-若使用獨立的 Arduino CLI 設定，可執行 `bash tools/build.sh --config-file /path/to/arduino-cli.yaml`。重建輸出位於 `build/output/`；不同環境重建的檔案可能有不同雜湊，`firmware/` 保存的是本次留存的固定檔案。
-
-## 驗證紀錄
-
-- 2026-11-12：應用程式刷入後雜湊校驗通過。
-- 實際開機版本為 `1.19-pika`，角色為 #25；無 microSD 時圖像載入成功。
-- 實際重開機後仍為 #25，內建圖像再次載入成功。
-- 162 項主機遊戲測試通過；同一套測試在 AddressSanitizer 與 UndefinedBehaviorSanitizer 下亦通過。
-- 原版畫面與觸控已由使用者確認；皮卡丘修改版的目視畫面與觸控狀態仍待使用者回報。
-
-詳細資訊見 `evidence/`。`STATS` 的 `mon` 僅代表舊圖像載入器；本版動畫是否載入應參考 `HEALTH` 的 `mon=1`。
-
-執行主機測試：
-
-```bash
+node --test test/web-serial.test.mjs
+python3 tools/check_web.py
 make -C TamaPoke/test run asan
+# 重新產生遊戲介面圖需要 Pillow 與 C++17 編譯器
+python3 tools/render_ui.py
 ```
 
-## 授權
+## 來源與授權
 
-程式碼沿用上游 MIT 授權，見 [LICENSE](LICENSE)。圖像來自 PMD SpriteCollab，沿用其非商業使用與署名條件；Pokémon 角色權利屬 Nintendo / Game Freak / The Pokémon Company。見 [第三方標示](THIRD_PARTY_NOTICES.md) 與 [上游署名](docs/UPSTREAM_CREDITS.md)。
+基於 [socquique/TamaPoke](https://github.com/socquique/TamaPoke) 的 [`00136942`](https://github.com/socquique/TamaPoke/commit/00136942f42c651ceb75fbfef8499a2df945cde7)。保留原作者署名與授權。
+
+程式沿用 [MIT](LICENSE)，圖像依 PMD SpriteCollab 署名與非商業條件使用。Pokémon © Nintendo / Game Freak / The Pokémon Company。個人、非商業粉絲專案；詳見 [第三方標示](THIRD_PARTY_NOTICES.md) 與 [上游署名](docs/UPSTREAM_CREDITS.md)。
