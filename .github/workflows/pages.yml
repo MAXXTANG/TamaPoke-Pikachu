@@ -28,7 +28,7 @@ jobs:
       - name: Verify website and archived firmware
         run: |
           python3 tools/check_web.py
-          node --test test/web-serial.test.mjs
+          node --test test/web-*.test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

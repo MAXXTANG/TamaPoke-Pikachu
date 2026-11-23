@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-23",
+  "firmware_changed": false,
+  "pack_bytes": 41746554,
+  "pack_files": 303,
+  "normal_species": 151,
+  "shiny_species": 151,
+  "pack_sha256": "4f369f6faaa617e16c5de2457ec547c8be24b410bec7411ffb607e64fcd3a2af",
+  "download_pack_sha256_verified": true,
+  "individual_asset_sha256_verified": 303,
+  "automated_web_tests": {
+    "total_passed": 23,
+    "new_storage_tests": 13,
+    "transport": "simulated Web Serial with fragmented responses and per-block ACKs"
+  },
+  "browser_checks": {
+    "browser": "Chrome",
+    "basic_mode_is_default": true,
+    "full_mode_reveals_extra_step": true,
+    "existing_game_skip_link": true,
+    "load_disabled_until_card_consent": true,
+    "no_physical_card_transfer_performed": true
+  },
+  "physical_full_pack_transfer_tested": false,
+  "card_file_verification": "firmware acknowledges each 2048-byte block and final DONE; final LS checks filenames and lengths, not card-side SHA-256",
+  "save_mutation_commands_in_loader": [],
+  "screenshots": [
+    "docs/images/full-sprite-mode.jpg",
+    "docs/images/full-sprite-step.jpg"
+  ],
+  "scope": "Complete SD transfer and post-reboot SD sprites still require a physical card test. Previous no-SD Pikachu flash/reboot and user display/touch confirmation remain documented separately."
+}

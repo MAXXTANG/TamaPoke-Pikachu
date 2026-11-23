@@ -25,6 +25,6 @@ jobs:
         with:
           node-version: 22
       - name: Verify Web Serial setup and recovery paths
-        run: node --test test/web-serial.test.mjs
+        run: node --test test/web-*.test.mjs
       - name: Verify beginner website and firmware package
         run: python3 tools/check_web.py

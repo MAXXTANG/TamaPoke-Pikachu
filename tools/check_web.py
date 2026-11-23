@@ -5,6 +5,7 @@ from urllib.parse import urlparse, unquote
 import hashlib
 import json
 import re
+import struct
 
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
@@ -60,4 +61,36 @@ for name in screen_names:
 for module in (WEB / "vendor/esp-web-tools-10.4.0").glob("*.js"):
     for dependency in re.findall(r'["\'](\./[^"\']+\.js)["\']', module.read_text()):
         assert (module.parent / dependency).is_file(), (module.name, dependency)
-print("Web page links, 22 UI images, vendor imports and exact archived firmware verified")
+pack_info = json.loads((ROOT / "evidence/full-sprite-pack.json").read_text())
+pack = (WEB / "assets/sprites/all-gen1.pak").read_bytes()
+assert len(pack) == 41746554 and pack[:4] == b"TPAK"
+assert hashlib.sha256(pack).hexdigest() == pack_info["sha256"]
+pack_module = (WEB / "sprite-pack.mjs").read_text()
+assert pack_info["sha256"] in pack_module
+assert str(len(pack)) in pack_module
+count = struct.unpack_from("<H", pack, 4)[0]
+assert count == len(pack_info["files"]) == 303
+offset = 6
+index = []
+for _ in range(count):
+    length = pack[offset]
+    offset += 1
+    name = pack[offset:offset + length].decode()
+    offset += length
+    size = struct.unpack_from("<I", pack, offset)[0]
+    offset += 4
+    index.append((name, size))
+expected_names = {"mons/thumbs.bin"} | {
+    f"mons/{form}{species:03d}.bin"
+    for species in range(1, 152) for form in ["p", "ps"]
+}
+assert {name for name, _ in index} == expected_names
+for (name, size), recorded in zip(index, pack_info["files"]):
+    payload = pack[offset:offset + size]
+    offset += size
+    assert recorded["name"] == name and recorded["bytes"] == size
+    assert hashlib.sha256(payload).hexdigest() == recorded["sha256"], name
+    if name in {"mons/p025.bin", "mons/ps025.bin", "mons/p026.bin", "mons/ps026.bin"}:
+        assert payload == (ROOT / "assets" / name.split("/")[-1]).read_bytes(), name
+assert offset == len(pack)
+print("Web links, 22 UI images, vendor imports, archived firmware and 303 full-pack assets verified")

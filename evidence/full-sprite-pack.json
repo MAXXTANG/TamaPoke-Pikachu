@@ -1,0 +1,1529 @@
+{
+  "source_url": "https://socquique.github.io/TamaPoke/web/sprites.pak",
+  "downloaded_on": "2026-11-23",
+  "format": "TPAK",
+  "bytes": 41746554,
+  "payload_bytes": 41740941,
+  "sha256": "4f369f6faaa617e16c5de2457ec547c8be24b410bec7411ffb607e64fcd3a2af",
+  "normal_species": 151,
+  "shiny_species": 151,
+  "files": [
+    {
+      "name": "mons/p001.bin",
+      "bytes": 124363,
+      "sha256": "45acc249ddc4ec08f42fa4e42f10f5c8c5fe627076da8ae92cb693e0807aa73e"
+    },
+    {
+      "name": "mons/p002.bin",
+      "bytes": 81797,
+      "sha256": "2878b8b43d019ae660c4a3150dfa0db52b7dd4bc887e0feac02b6770db0b4a54"
+    },
+    {
+      "name": "mons/p003.bin",
+      "bytes": 108105,
+      "sha256": "7d8a86c63aa1f3b73c0c77b5cadf99166a27519396f2b98c38ad490ea99d777b"
+    },
+    {
+      "name": "mons/p004.bin",
+      "bytes": 112641,
+      "sha256": "9c76c734948f1de831a97651019b51326caf9a4d8d4ffa469c160157a85acd04"
+    },
+    {
+      "name": "mons/p005.bin",
+      "bytes": 162125,
+      "sha256": "969eb795dc35366f727c64461de41d5f82a5b99acb5a47ec4a9f2ee504f30654"
+    },
+    {
+      "name": "mons/p006.bin",
+      "bytes": 179079,
+      "sha256": "a8f72bc46f5862faca6f936bb20b27ebb7261635ea62b44052405408bd568011"
+    },
+    {
+      "name": "mons/p007.bin",
+      "bytes": 109007,
+      "sha256": "b491bb232cdefd9d216146289a8cdb9d3d2c1f52c133db42677730861ddce121"
+    },
+    {
+      "name": "mons/p008.bin",
+      "bytes": 97159,
+      "sha256": "2a142407fcf9c6079f5fb0a7c62da2b875735996a19537135293ee53351f67b0"
+    },
+    {
+      "name": "mons/p009.bin",
+      "bytes": 117005,
+      "sha256": "fc73dec05e2b624a851cf8edcfff354adf4d0f7f16c788fb61f338c1cdf2921a"
+    },
+    {
+      "name": "mons/p010.bin",
+      "bytes": 87309,
+      "sha256": "0c07a820b354912ae1c2fc49f6c812adb1734ad73cc2fe8649925563f5301b8e"
+    },
+    {
+      "name": "mons/p011.bin",
+      "bytes": 126485,
+      "sha256": "fe4175beae5e5b7d77c990d27b173fcc4c71d150a9a667d76736300343a3a883"
+    },
+    {
+      "name": "mons/p012.bin",
+      "bytes": 171819,
+      "sha256": "c10ccef4df0f72cd5fa7af211fafd255db77ac177a7a7f0c7df9048688fd7199"
+    },
+    {
+      "name": "mons/p013.bin",
+      "bytes": 92287,
+      "sha256": "ff583e74e0e6fc5368a02dfe79a58c6bcf6f04ceabae8068e13eebe798f0336f"
+    },
+    {
+      "name": "mons/p014.bin",
+      "bytes": 106507,
+      "sha256": "4e1ac6f31385c30042acf1af93940c016b64b9521f28561bad6dc9d901134098"
+    },
+    {
+      "name": "mons/p015.bin",
+      "bytes": 155673,
+      "sha256": "01b1fb5cc1e3d15b26b7bf24647dbec0fcacd195251317fcff8818028d492d69"
+    },
+    {
+      "name": "mons/p016.bin",
+      "bytes": 117585,
+      "sha256": "1c6252240cf66de01e5ea58fc4358f3e63bb36b5d8d79a7c5f9107f365ddb841"
+    },
+    {
+      "name": "mons/p017.bin",
+      "bytes": 124045,
+      "sha256": "dea95bbac61fa583679abc8a25bef53b6d64dd169524c6ec4a6eae4d14d882b3"
+    },
+    {
+      "name": "mons/p018.bin",
+      "bytes": 128529,
+      "sha256": "43402b5d44c626c81e78af7306bb52d95a612fa85f6c4176868fde52f11c7b26"
+    },
+    {
+      "name": "mons/p019.bin",
+      "bytes": 121109,
+      "sha256": "59bf53d199844ee0fe715331fdf2362fcd7f7deb2dab6ebd2b061c8da29c685e"
+    },
+    {
+      "name": "mons/p020.bin",
+      "bytes": 130389,
+      "sha256": "393432370e902b7acefa020b0d14aed4ef303e2029e4144729da1a4ef053b09d"
+    },
+    {
+      "name": "mons/p021.bin",
+      "bytes": 119061,
+      "sha256": "45fbc36e8fc1fd9d6406e497122a676be18591c785ce5e3575d82fa3ff74d460"
+    },
+    {
+      "name": "mons/p022.bin",
+      "bytes": 178465,
+      "sha256": "d4ce14cd6c23f929a0f988b1e6028c1604eb9d7ba08ae6e136793de17ee9382e"
+    },
+    {
+      "name": "mons/p023.bin",
+      "bytes": 171725,
+      "sha256": "96cf02fc6b7f5dd03b50fe63bedb58a323dc57d67b68c5562313fcc4d428fcaa"
+    },
+    {
+      "name": "mons/p024.bin",
+      "bytes": 146821,
+      "sha256": "c2ff6f63a017737ac47d79151cccc2b875276d1bc15cefb9f7f1e06bc6b25f6f"
+    },
+    {
+      "name": "mons/p025.bin",
+      "bytes": 159043,
+      "sha256": "fe5b34f8923dc18b00b7404bbbe90f7eff1749fdc985ad66ee4317e5c9d0b0db"
+    },
+    {
+      "name": "mons/p026.bin",
+      "bytes": 165451,
+      "sha256": "082bc8d6899d4da9ab9079b1048b6155d6ee4983bccc7a2a3969b8408c569caf"
+    },
+    {
+      "name": "mons/p027.bin",
+      "bytes": 119171,
+      "sha256": "5f25d6e64ec0be905819e1fb18db2e7aebf77d4aa8b9e622b0e0d5bd6a271cbe"
+    },
+    {
+      "name": "mons/p028.bin",
+      "bytes": 140679,
+      "sha256": "8dfcc422a8060974b6590e1e469145ac0b5b97578cbdffc4b479e53629369b80"
+    },
+    {
+      "name": "mons/p029.bin",
+      "bytes": 109135,
+      "sha256": "ab5e03b032fe6ed127b9f6953a96a8cbc43bdb2f9ecbcbc7f425bf40bc1a9895"
+    },
+    {
+      "name": "mons/p030.bin",
+      "bytes": 88319,
+      "sha256": "cc01c69d29fa4f68dc202888e690f0a0f2a0b24b481c096286ba74e45f92ef81"
+    },
+    {
+      "name": "mons/p031.bin",
+      "bytes": 104067,
+      "sha256": "818e8cd25fa778c81c5a76f99e66512739fab0ea95d96c7946cf6b049046416f"
+    },
+    {
+      "name": "mons/p032.bin",
+      "bytes": 115589,
+      "sha256": "ac070dc280f2416ba8664cd57f49ff9e1767f42ac23ce531d623dcf14330f20e"
+    },
+    {
+      "name": "mons/p033.bin",
+      "bytes": 142925,
+      "sha256": "8038e22fd015f021f474feff3ae5614594820399e1125255a13c0c4143d64060"
+    },
+    {
+      "name": "mons/p034.bin",
+      "bytes": 148231,
+      "sha256": "cdeda97d6e6b7a1c1dd83adbd4a9710fae01d351e2c298def15486d8968358e3"
+    },
+    {
+      "name": "mons/p035.bin",
+      "bytes": 107415,
+      "sha256": "7a6742c9c169d2965c1921973430104833ee8929368617e2a9e8da098063c195"
+    },
+    {
+      "name": "mons/p036.bin",
+      "bytes": 121369,
+      "sha256": "d2e9272fc61a429f2ad377ad395ebf52903389e51bc29aeb1126a2f359a55d01"
+    },
+    {
+      "name": "mons/p037.bin",
+      "bytes": 117585,
+      "sha256": "0742ec2b79f3cc60cb8151ee3a37d71b72470d8ad3085812da09d3045a6567e4"
+    },
+    {
+      "name": "mons/p038.bin",
+      "bytes": 154705,
+      "sha256": "b8aa83b9825a69b8acb0298c14dae10435056166afb8462bab3b8b978c17dd45"
+    },
+    {
+      "name": "mons/p039.bin",
+      "bytes": 132043,
+      "sha256": "f5ae7ae2ac3b0933ad831f8e274d56e8e412436fc0063b159f820f3e53490ae1"
+    },
+    {
+      "name": "mons/p040.bin",
+      "bytes": 101513,
+      "sha256": "7b91de1fd507aecbec453d93d8731d7a3a4a2920e84d5d8e45a812b575c78f06"
+    },
+    {
+      "name": "mons/p041.bin",
+      "bytes": 142617,
+      "sha256": "1393f76c59b2ee4cbde659b1f861ad617c912fabc4be0a94dbf76314ee8a8573"
+    },
+    {
+      "name": "mons/p042.bin",
+      "bytes": 168017,
+      "sha256": "e659daa40ed574a194fae0176721d592159da6fe6939e1987b325d640f3bd288"
+    },
+    {
+      "name": "mons/p043.bin",
+      "bytes": 138841,
+      "sha256": "f3391031417e3e8413739f0c3712eff02e52f1350791cd4917a312f7bbbccedd"
+    },
+    {
+      "name": "mons/p044.bin",
+      "bytes": 133645,
+      "sha256": "059c97463bb9801bb684c3aa9d8b779fb4bc7c69b86cc5d191b67d38795022aa"
+    },
+    {
+      "name": "mons/p045.bin",
+      "bytes": 144989,
+      "sha256": "ba495cd4d823c8134dd175c6111a0bead77e4819d3b71ee8f4cc6cfc68d66607"
+    },
+    {
+      "name": "mons/p046.bin",
+      "bytes": 98437,
+      "sha256": "7f01651c3d577ab6c0e778ae0b928ec45bff2ba4904912157b7f0c0628028d48"
+    },
+    {
+      "name": "mons/p047.bin",
+      "bytes": 146383,
+      "sha256": "28a81eea297165dd169b63a6174a95d238ea803e74c0c0426b65f2723c4117d2"
+    },
+    {
+      "name": "mons/p048.bin",
+      "bytes": 144009,
+      "sha256": "1aaffdd81920d217c1a5d6a5d8b405626976e22fe2475045aea5684f20190038"
+    },
+    {
+      "name": "mons/p049.bin",
+      "bytes": 186039,
+      "sha256": "12b3529c7188a4b03877d94408b7f166f23d998553d996ccfad3c02b6f4cbcd5"
+    },
+    {
+      "name": "mons/p050.bin",
+      "bytes": 54013,
+      "sha256": "f477ce17f232c35a77014c75ae59225cb2999d736a7e68c08f751cdc944d1ada"
+    },
+    {
+      "name": "mons/p051.bin",
+      "bytes": 90685,
+      "sha256": "e5d6b48fd610be907f452894b38f3a0056caae7d8ab1e0e1aa69076fcefbd34c"
+    },
+    {
+      "name": "mons/p052.bin",
+      "bytes": 103749,
+      "sha256": "61f11c75d0242a4ab5b23f0c8211d36f270965d83fadb7c5b8b430af2ae7e45b"
+    },
+    {
+      "name": "mons/p053.bin",
+      "bytes": 134533,
+      "sha256": "3ce1eb079b88d6585c29158b823123e10ad146246ba966ea161bc6e3e44e770b"
+    },
+    {
+      "name": "mons/p054.bin",
+      "bytes": 104523,
+      "sha256": "59010767106eb21f0f9ef3747e40a852fedd0e85c5e5bd70923a8f42f7ae9905"
+    },
+    {
+      "name": "mons/p055.bin",
+      "bytes": 137603,
+      "sha256": "a2418f2811b030ad26f8e7558a17b45eaeb2edcd150210a1d1a227dc4a7da872"
+    },
+    {
+      "name": "mons/p056.bin",
+      "bytes": 150427,
+      "sha256": "bf21f3cbf1c44ca75df5fc774a547cbc68784ef06f5e8b57711c1367a6d64359"
+    },
+    {
+      "name": "mons/p057.bin",
+      "bytes": 138647,
+      "sha256": "e9a48b894580e3ca435f193df30d4ca3556aff02a7eb25752762f48afe5f8060"
+    },
+    {
+      "name": "mons/p058.bin",
+      "bytes": 128909,
+      "sha256": "ed4ba885fa56bb058c348b08b3b56e9146793b0bfa41fa18206271097015e9e9"
+    },
+    {
+      "name": "mons/p059.bin",
+      "bytes": 141633,
+      "sha256": "01254b6465fd3910def999680d53ba6dfa9a4c73b8ff609a3616a1e4bb77ee03"
+    },
+    {
+      "name": "mons/p060.bin",
+      "bytes": 125899,
+      "sha256": "de1b48eb16d4af04eba643da1b997e39a95cbc6574eca27b8c96b3f754ea541e"
+    },
+    {
+      "name": "mons/p061.bin",
+      "bytes": 105849,
+      "sha256": "a89a190b59996ce0b0b5bfd5de1302327d9b31fc0d18e263775090e5673b586c"
+    },
+    {
+      "name": "mons/p062.bin",
+      "bytes": 134263,
+      "sha256": "b830a0e3767fa6fa56d22620cda437663cf231b94b7314054f553b0a7799af11"
+    },
+    {
+      "name": "mons/p063.bin",
+      "bytes": 148119,
+      "sha256": "215a981657cda480ac391cd67e61c5c7cbdb11ce9a368a1ae96e4080f35935fc"
+    },
+    {
+      "name": "mons/p064.bin",
+      "bytes": 134605,
+      "sha256": "662bada931bf382ca38ad04139f93b2c6527efb6be543776bcd455fceefa65ad"
+    },
+    {
+      "name": "mons/p065.bin",
+      "bytes": 117389,
+      "sha256": "dfefb4ebfcc9aa271aa9f335d2c46b683caebda587cf3adc25746ee148c47755"
+    },
+    {
+      "name": "mons/p066.bin",
+      "bytes": 106543,
+      "sha256": "a0cd1ae25dbb114dabaf5b15c1f6728ecd4b167c434316a502c1344bd16f6d70"
+    },
+    {
+      "name": "mons/p067.bin",
+      "bytes": 135051,
+      "sha256": "f0a1bc3e2ed84f1959db10fa733c0b063dd2c93c9788d31b0532a7c08ceeef94"
+    },
+    {
+      "name": "mons/p068.bin",
+      "bytes": 161109,
+      "sha256": "dbe9c41f53193f78b51a6499f9f4aebb46ef4c66abf04666501e6b91d26f4f64"
+    },
+    {
+      "name": "mons/p069.bin",
+      "bytes": 91007,
+      "sha256": "30f532bc9ed28d94b8ce75be748abe3e4f2b7fd66b697ec0cd8fcbf32fc41dfc"
+    },
+    {
+      "name": "mons/p070.bin",
+      "bytes": 99213,
+      "sha256": "557e8d0b148915e3f7f30f64f01b10492db6aa509346d5eb7ba8e7fdbdd9b11b"
+    },
+    {
+      "name": "mons/p071.bin",
+      "bytes": 127631,
+      "sha256": "09809737e0e65657116be7a8d7b26d2595d385c537736c54610f3742c7be76df"
+    },
+    {
+      "name": "mons/p072.bin",
+      "bytes": 117009,
+      "sha256": "1476713790cc97bb4303ca55393ef5f95edfd782508d937fd815cf3f8f16dc3b"
+    },
+    {
+      "name": "mons/p073.bin",
+      "bytes": 122257,
+      "sha256": "2dae8430778a646537d83bea916acc001109d0f768f9fe72ce27a06be9058cfd"
+    },
+    {
+      "name": "mons/p074.bin",
+      "bytes": 127623,
+      "sha256": "059a1a034d5f7963000dfc18e6ab57b9033e005b428e609ae88e92af1ce5b636"
+    },
+    {
+      "name": "mons/p075.bin",
+      "bytes": 144523,
+      "sha256": "bf6beb0f97fee2dbecf0b9d98dd6b4d7c5e1a8e29c3e00611f763220d814d326"
+    },
+    {
+      "name": "mons/p076.bin",
+      "bytes": 134921,
+      "sha256": "6fcd5ec2fed852efe79be5fffc78d069e6696373a8741c83e9e43c5528f59311"
+    },
+    {
+      "name": "mons/p077.bin",
+      "bytes": 131865,
+      "sha256": "fe328ffd79dbfeea1b6fa2f36f5c2c612e385cc0fd986e104e42ed06c7e19ad1"
+    },
+    {
+      "name": "mons/p078.bin",
+      "bytes": 164121,
+      "sha256": "36012d8be87b6f77f003c124f921d2315fecbb32a2bdd3cb6b9631b4a36312ad"
+    },
+    {
+      "name": "mons/p079.bin",
+      "bytes": 82309,
+      "sha256": "342c07f173c2f12124c77dbcb38350693d600704fb453ed3e8a646d7e81936ee"
+    },
+    {
+      "name": "mons/p080.bin",
+      "bytes": 132497,
+      "sha256": "78a5b2fcd68eff19f5242d8a0ee8050747bf73f80ddb1923a7ad2706270e8c52"
+    },
+    {
+      "name": "mons/p081.bin",
+      "bytes": 140127,
+      "sha256": "ed984a7a0c29923b0570ed0d28a1a5d712793b5b2ad2e5bd6491c3d354d5f9d1"
+    },
+    {
+      "name": "mons/p082.bin",
+      "bytes": 122903,
+      "sha256": "e47e53e5e5d942e1e3cc9864a105776fa6dc61f292f928198be034dee7e85dcf"
+    },
+    {
+      "name": "mons/p083.bin",
+      "bytes": 105475,
+      "sha256": "4b9d44d9b8cdc98626a6075a2ac43a39a5f4b7af8305e9b388eec58860474265"
+    },
+    {
+      "name": "mons/p084.bin",
+      "bytes": 135045,
+      "sha256": "2ea7f50568f2ffe4ee7e5499734eecff9c188090836be59d69f8c84a9e7a25d0"
+    },
+    {
+      "name": "mons/p085.bin",
+      "bytes": 140433,
+      "sha256": "437ef78427385342600f3b77faf8b6649fc5159724074f862cce21c45139078e"
+    },
+    {
+      "name": "mons/p086.bin",
+      "bytes": 113935,
+      "sha256": "d01d66402472495b95c45140b2253f0df2b3fd82750d05e1e2e1fa77c6b005f6"
+    },
+    {
+      "name": "mons/p087.bin",
+      "bytes": 140301,
+      "sha256": "f2f7ddd71e5f2d3d2e6a0020023ac8202441f96bc4e62341164020abcb395973"
+    },
+    {
+      "name": "mons/p088.bin",
+      "bytes": 107015,
+      "sha256": "8d70690b2bd34bf6eb1e89a81ddaa325ba7e8138b9b47125972224355ec06c1c"
+    },
+    {
+      "name": "mons/p089.bin",
+      "bytes": 133247,
+      "sha256": "1834dadd2e41219ac39f1a7773611a7c4d1f7347244f4fe98d4d935e7abcded2"
+    },
+    {
+      "name": "mons/p090.bin",
+      "bytes": 92557,
+      "sha256": "5ed8e124df86135a968dd5641150cf9bbba52d7f757a80ffe939547add75d109"
+    },
+    {
+      "name": "mons/p091.bin",
+      "bytes": 142871,
+      "sha256": "b3b5e550e50620f1d0a36ba8c06c8cbdd4f7cd2f13cbc8e8867c361c2c0e5633"
+    },
+    {
+      "name": "mons/p092.bin",
+      "bytes": 224435,
+      "sha256": "15450be197643b3ab7a8c9ca3c42da071945891cb006892fd809a3ed8d60a042"
+    },
+    {
+      "name": "mons/p093.bin",
+      "bytes": 158883,
+      "sha256": "5f8b9d84311c02241c94cedc899bfdfba341dd1aa36bd1696cfa5516ae5b7d92"
+    },
+    {
+      "name": "mons/p094.bin",
+      "bytes": 145229,
+      "sha256": "ae557051c23cc184e92c2b0989172be3d0d7b1c67a8cba5f9bb395b1c230ba96"
+    },
+    {
+      "name": "mons/p095.bin",
+      "bytes": 492921,
+      "sha256": "32b6aa26e2f727854e3eccfb71efdbe70c6bbf592c02a7069a489575fe67628e"
+    },
+    {
+      "name": "mons/p096.bin",
+      "bytes": 120455,
+      "sha256": "08b0c36cace8312c980589835e285947c5ab6933babe4d7dd9f4892034496f30"
+    },
+    {
+      "name": "mons/p097.bin",
+      "bytes": 128515,
+      "sha256": "24d0a063b5e496a396449d8c13e396c7df93d9ef601310512ef16e7eece48c16"
+    },
+    {
+      "name": "mons/p098.bin",
+      "bytes": 133381,
+      "sha256": "0e53fc12d50821e03270b15a3dc728ebd05b16e64dfea00244fd8183c66bc70a"
+    },
+    {
+      "name": "mons/p099.bin",
+      "bytes": 136071,
+      "sha256": "9c635037362c35d6f078cb4782ec530db3419f64c7f8cc956b4bba9d5b3cb4b7"
+    },
+    {
+      "name": "mons/p100.bin",
+      "bytes": 134941,
+      "sha256": "3835d4d93816c9a6754c0ef11221f8383168c4ff013518d16444d4c3bb181c96"
+    },
+    {
+      "name": "mons/p101.bin",
+      "bytes": 107023,
+      "sha256": "129767cc73be4194f7309759e14a5bdb893365208949d45c903b305f0e18015a"
+    },
+    {
+      "name": "mons/p102.bin",
+      "bytes": 93443,
+      "sha256": "babab21515e9ef3c919da82cc646e146bbe9e6fbd6bb2b7494539cba4fabcb1f"
+    },
+    {
+      "name": "mons/p103.bin",
+      "bytes": 147335,
+      "sha256": "9e5386ba6cf10b52e2366f0a2a17cc9738ce8878f1c16022881a0ee94b6ee126"
+    },
+    {
+      "name": "mons/p104.bin",
+      "bytes": 115979,
+      "sha256": "f805b9bbbbac1a9d345257d6dc7ad76362e64a00dc49070574c22160a1ed4a7d"
+    },
+    {
+      "name": "mons/p105.bin",
+      "bytes": 109633,
+      "sha256": "bbd8c1c03f9c7e5167b0613e9e5e375cf53e0753f57758d2103cd50e6c7199cb"
+    },
+    {
+      "name": "mons/p106.bin",
+      "bytes": 117757,
+      "sha256": "4e180933fba9ce68722910825424c8783a179f36ac97cadbd2ffc2fc74455643"
+    },
+    {
+      "name": "mons/p107.bin",
+      "bytes": 113805,
+      "sha256": "4a648b74b6f9a7633acd49833efaae36f6be57eb9bd74ba8757ca5b65d8a6744"
+    },
+    {
+      "name": "mons/p108.bin",
+      "bytes": 137859,
+      "sha256": "6c933b8473247b26b6ea7d3e5cfef834242e7a2f284f727d349af7f66b02c63c"
+    },
+    {
+      "name": "mons/p109.bin",
+      "bytes": 177583,
+      "sha256": "456cdabb18c62758b0ef24e0e4cb124ea896d12cfbfb514aa04e305db163211e"
+    },
+    {
+      "name": "mons/p110.bin",
+      "bytes": 158373,
+      "sha256": "ff4c56a93577702bb0d673fcccc35e2edc5ef8350cc77d561232fe28b3d7095f"
+    },
+    {
+      "name": "mons/p111.bin",
+      "bytes": 90743,
+      "sha256": "2f5e2e52c494b626dfdeb108036a71083f544187eeab7ed84739b66ad9d97d8e"
+    },
+    {
+      "name": "mons/p112.bin",
+      "bytes": 133763,
+      "sha256": "d5ffaf5216f63212253efbe359ef058f39a3c44406f4a83c61cc05dff8bbdd74"
+    },
+    {
+      "name": "mons/p113.bin",
+      "bytes": 88959,
+      "sha256": "2553bf59a3727e5bbf60c6c4ea7099ff7d93430c7e734f1a9fd0b32eeb0a8e01"
+    },
+    {
+      "name": "mons/p114.bin",
+      "bytes": 111625,
+      "sha256": "ebff1a73413abc5876a0dbed4d33cb73ae293af13b2065256e5723e8e9dd68d5"
+    },
+    {
+      "name": "mons/p115.bin",
+      "bytes": 162511,
+      "sha256": "4b935039746a2d507a8cfcbde9b004a5a1743ca262c5239a4861a0510c6639a7"
+    },
+    {
+      "name": "mons/p116.bin",
+      "bytes": 94983,
+      "sha256": "bd639fec61f3c3a107d96f4d299f6e6fae914d14b5cd0997f88810c42a6a4b22"
+    },
+    {
+      "name": "mons/p117.bin",
+      "bytes": 144913,
+      "sha256": "57ae2a25ee366b91e80b0b74b2f17e61e5931fb239b2dcc8811c5a9c23db9d8a"
+    },
+    {
+      "name": "mons/p118.bin",
+      "bytes": 121513,
+      "sha256": "f13343ea49698ffba050806f6e2adbbce9d2be3792550988455fc42e406ce54e"
+    },
+    {
+      "name": "mons/p119.bin",
+      "bytes": 133655,
+      "sha256": "796a65b4fde5695a222a08849fae7c4461a18513cf4572c9f6ec00e4e91a4a6c"
+    },
+    {
+      "name": "mons/p120.bin",
+      "bytes": 96525,
+      "sha256": "ac560e7fb2fb49d0a9ddadfd4be44a852cdcf8505d0cb3456a3f99a5cfa85481"
+    },
+    {
+      "name": "mons/p121.bin",
+      "bytes": 108821,
+      "sha256": "f63068dd6c1915425839e41a4fd141f66f6bec199737cd736b6889702fee83d8"
+    },
+    {
+      "name": "mons/p122.bin",
+      "bytes": 121537,
+      "sha256": "2bb3e85e38fb88783c75c378d7b267a42eb24d0827e7c65df0cca7544f106ae1"
+    },
+    {
+      "name": "mons/p123.bin",
+      "bytes": 126207,
+      "sha256": "a40642f570bf9522fae38c23c6a704fbc874c101498d6b80b4bb3db1b6c52a7d"
+    },
+    {
+      "name": "mons/p124.bin",
+      "bytes": 101893,
+      "sha256": "541834d69764dc06d34706ab625fcf57d3b61b9bc2230fd4d616256f645c4d41"
+    },
+    {
+      "name": "mons/p125.bin",
+      "bytes": 125955,
+      "sha256": "b0589b8e5f6b611ef101761025d4d2993dc2fcc5a2ea669817134c928c53b171"
+    },
+    {
+      "name": "mons/p126.bin",
+      "bytes": 119297,
+      "sha256": "9f7dd88b7d23b64090cf1a34aa6ee025965424281166a86a1e58e28e3d76761a"
+    },
+    {
+      "name": "mons/p127.bin",
+      "bytes": 113667,
+      "sha256": "e81962b2c67bef7e2c0a9e0ec5f7f74a29e3c0652222a5cf7df7805099ab5eaa"
+    },
+    {
+      "name": "mons/p128.bin",
+      "bytes": 156185,
+      "sha256": "ae750a608d2e9816b15600754e098ae9411e92d40e8ad5f4bf934c48053c2701"
+    },
+    {
+      "name": "mons/p129.bin",
+      "bytes": 120469,
+      "sha256": "838ffb4532c86d28823c39fad670a53c23663d768a9b0b583c496032b243286f"
+    },
+    {
+      "name": "mons/p130.bin",
+      "bytes": 495503,
+      "sha256": "17b73cfc1e46a5fd8edb082154973b2da27684500bd95fac01bca079fb4cb385"
+    },
+    {
+      "name": "mons/p131.bin",
+      "bytes": 201357,
+      "sha256": "b9755a69fbd4feb1eff1748ce8b09a34c866682d4ad7a4588d4e30653f4371c5"
+    },
+    {
+      "name": "mons/p132.bin",
+      "bytes": 79349,
+      "sha256": "7f24c25991f7d450ce93ff4a46e8ff01320ee81d8c3a23871e7a1a95485f084f"
+    },
+    {
+      "name": "mons/p133.bin",
+      "bytes": 131215,
+      "sha256": "add399566ad9d33fb35f89109a6606d5bd8e7de8149b3ed38928c84e838ea9ac"
+    },
+    {
+      "name": "mons/p134.bin",
+      "bytes": 139899,
+      "sha256": "5273edde32b3257b5f4a38607d798a24bdd1958a51d281538a55768af567475f"
+    },
+    {
+      "name": "mons/p135.bin",
+      "bytes": 126657,
+      "sha256": "4ffd8145160cc13f7f227c8eafffe01700afb933fb5b7b43c42033a9e96922bc"
+    },
+    {
+      "name": "mons/p136.bin",
+      "bytes": 123651,
+      "sha256": "8220056459d14af4f14401688e69ad2592c8deca6f1bf25c5ac7e61fa8474da5"
+    },
+    {
+      "name": "mons/p137.bin",
+      "bytes": 94343,
+      "sha256": "95e2d95610945468c8c43abef2e246df54bad3ff32e0c4ec33cc94e97123b5bb"
+    },
+    {
+      "name": "mons/p138.bin",
+      "bytes": 103929,
+      "sha256": "9f311cbfeb2f07145d1ad3a700a8241ad0af366f217e3cf1c08968de7f458d5f"
+    },
+    {
+      "name": "mons/p139.bin",
+      "bytes": 124797,
+      "sha256": "9b4fe10ad6d288914156d81f5dfcee7ea95b77b3f9ad6adde8a82d0ce40ea61b"
+    },
+    {
+      "name": "mons/p140.bin",
+      "bytes": 84867,
+      "sha256": "eba136591d4cfe678c10a3a7862bd9fc7ece9276e705a12f898295f17be848be"
+    },
+    {
+      "name": "mons/p141.bin",
+      "bytes": 123665,
+      "sha256": "fe8d4e30d99974ce472463501825c1d9ea35c3d130024d0336609d1c0abcc9e1"
+    },
+    {
+      "name": "mons/p142.bin",
+      "bytes": 149775,
+      "sha256": "4b6653e2b321144b4279e54daa034d912433121db6d41ef6c106ef7c63037a20"
+    },
+    {
+      "name": "mons/p143.bin",
+      "bytes": 119821,
+      "sha256": "cdfe60d4b03b37a02bc34aef193222d705abb584f1a4a24ac69600eb32bff3d5"
+    },
+    {
+      "name": "mons/p144.bin",
+      "bytes": 346113,
+      "sha256": "73bd06ddd901b8b268bae31c5c68a69c34b42ec080afc2add1d0454d5205b016"
+    },
+    {
+      "name": "mons/p145.bin",
+      "bytes": 240265,
+      "sha256": "d325ff57d7abc5df5798e1f8b0d12273f8a5e7278bdaa761f8b5d9e6200ffdc7"
+    },
+    {
+      "name": "mons/p146.bin",
+      "bytes": 437257,
+      "sha256": "ca4686abcaacc8ab1e5cf09b524dfd840ff9798a2296546f70670d959f11c381"
+    },
+    {
+      "name": "mons/p147.bin",
+      "bytes": 104705,
+      "sha256": "09e0d277c4d761a33acb4775900bc2f62ca41a4046f09ecf43b0cdf4d338c38d"
+    },
+    {
+      "name": "mons/p148.bin",
+      "bytes": 179729,
+      "sha256": "f77407b62e7d2522a6daf872a9cd4c50f30609f356218e67bdd4db10c8ad7ccd"
+    },
+    {
+      "name": "mons/p149.bin",
+      "bytes": 161937,
+      "sha256": "fca9afbe3bf2ee94a202d1a950ab5fb882d9990c58fb6b3a882372ce7a2514f7"
+    },
+    {
+      "name": "mons/p150.bin",
+      "bytes": 211921,
+      "sha256": "4f02dc80573962980a9397c9415fe6ff4c6998bceeaba5ead4f7d76bfb43d5d9"
+    },
+    {
+      "name": "mons/p151.bin",
+      "bytes": 198419,
+      "sha256": "155d5a4ebda2ddc83507fb1492aba242a39915f5cf699f07175cbce56058abe8"
+    },
+    {
+      "name": "mons/ps001.bin",
+      "bytes": 124371,
+      "sha256": "f264acba008703729e60bfcb56098a0576ccf0203e050d1845e8758162bf85a7"
+    },
+    {
+      "name": "mons/ps002.bin",
+      "bytes": 81797,
+      "sha256": "b39d61caabfc60bcd39ceba9c6f2f9d411aa2deca188c1866b160c55bbded9d9"
+    },
+    {
+      "name": "mons/ps003.bin",
+      "bytes": 108105,
+      "sha256": "f02bab43dfd115a7bee79fe0d5b76cb6f5ee58e74d4aa60d3bd8c57b2df61908"
+    },
+    {
+      "name": "mons/ps004.bin",
+      "bytes": 112649,
+      "sha256": "704f7242d07cda281022fbe5b7b5706609085373997c5c0c771369fdbd60b8fc"
+    },
+    {
+      "name": "mons/ps005.bin",
+      "bytes": 162125,
+      "sha256": "d9ae6280c67dd924c883d9c88871f603464b5674c1242af046affb88e8cba6ab"
+    },
+    {
+      "name": "mons/ps006.bin",
+      "bytes": 179089,
+      "sha256": "65881a25eb8154a7d434b44cb2e9cda5d103d05b73b7da131ffaaec11385b15b"
+    },
+    {
+      "name": "mons/ps007.bin",
+      "bytes": 109009,
+      "sha256": "7b43b9d679bccff3229e0985dacc193d95f9533ecd7c60f92e06dec751f03bd4"
+    },
+    {
+      "name": "mons/ps008.bin",
+      "bytes": 97163,
+      "sha256": "33377b4a9e226bebb9f36ccf5c01c318ccac0b354bd30469168de8a563867c8e"
+    },
+    {
+      "name": "mons/ps009.bin",
+      "bytes": 117007,
+      "sha256": "21e65f54f2deeff6412582469834532bf48c366b4f9ce5d70c36dfb8cf752dee"
+    },
+    {
+      "name": "mons/ps010.bin",
+      "bytes": 87309,
+      "sha256": "b99188775f432357dcc8d2e1b7a74709d2ba9e81e2b64a7194cebee284803ec8"
+    },
+    {
+      "name": "mons/ps011.bin",
+      "bytes": 126485,
+      "sha256": "8a42ab16cf599baa07029cbc5b0ea18c4b7df850577c177c65689df5d23904c4"
+    },
+    {
+      "name": "mons/ps012.bin",
+      "bytes": 171823,
+      "sha256": "c4b0f65bbf70b5822449414ef3d56a4e0f7794daa2f58ef54fefc2f7ac0c0beb"
+    },
+    {
+      "name": "mons/ps013.bin",
+      "bytes": 92287,
+      "sha256": "05a271e78ef3c7af238cc6d8c26094fd6f72095ae48669a6930e5a1cc14f19bb"
+    },
+    {
+      "name": "mons/ps014.bin",
+      "bytes": 106507,
+      "sha256": "b3baca6af6dc5cf88893595a4bd147f19d87e1ce064a1e67476d427facf3b7c6"
+    },
+    {
+      "name": "mons/ps015.bin",
+      "bytes": 155673,
+      "sha256": "0477d004581fbdcb4ac08bb1afbe60dba233657f68ffc87288d561d0b98002e5"
+    },
+    {
+      "name": "mons/ps016.bin",
+      "bytes": 104271,
+      "sha256": "892e50a8f887c72b3177ad76bc37273c7e777d22f01008989f92eff92d89c522"
+    },
+    {
+      "name": "mons/ps017.bin",
+      "bytes": 124045,
+      "sha256": "a15b737eb43fc4791623daafa828c37164ccaa6bc53e01d3d239fbf8378f9572"
+    },
+    {
+      "name": "mons/ps018.bin",
+      "bytes": 128529,
+      "sha256": "69b5598148bc40dfa9a8a145284ee83c34c20cef993d8fc60617fda2c67d6019"
+    },
+    {
+      "name": "mons/ps019.bin",
+      "bytes": 121113,
+      "sha256": "44bb7e78b3e06f70ec59eb698712a2936ef01b39c22b1d332cbfe4af41cd5cf7"
+    },
+    {
+      "name": "mons/ps020.bin",
+      "bytes": 130389,
+      "sha256": "aec9301d2f806dfd963a3d641a5a0c00a6a22cabbc84b537a282bac5edf587e3"
+    },
+    {
+      "name": "mons/ps021.bin",
+      "bytes": 119061,
+      "sha256": "55dc935ea4a3bc404dc9a1aee1081b1e075f30f11e5737d041afe859eccb4846"
+    },
+    {
+      "name": "mons/ps022.bin",
+      "bytes": 178465,
+      "sha256": "cf5a7f3d6f6e3e2fd7fbbcf519be4ff01f30eb70c363ed1701546713db399c5b"
+    },
+    {
+      "name": "mons/ps023.bin",
+      "bytes": 171725,
+      "sha256": "8ac7388c1c162159c2431d6ee152fdd4b143ea1eadee0b989c05ae034a664193"
+    },
+    {
+      "name": "mons/ps024.bin",
+      "bytes": 146821,
+      "sha256": "7b2a876afa2643b1ccc5d1ce36b6c2df5cb3a9b67f6bdb3330048a3f65762932"
+    },
+    {
+      "name": "mons/ps025.bin",
+      "bytes": 159043,
+      "sha256": "7e2f587dca5d2c6e802af314c4fb7bd0ccb2abc2ac29e29da3f8ba5c0378c143"
+    },
+    {
+      "name": "mons/ps026.bin",
+      "bytes": 134663,
+      "sha256": "8f47b98c99babcfb284c245e901c30c5d44a27ada6ee7fd8c198e71c956c61e5"
+    },
+    {
+      "name": "mons/ps027.bin",
+      "bytes": 119171,
+      "sha256": "42bdc60e90b7a13e3945c34029968327973dad10dac49c11d1642bfc9bdf9123"
+    },
+    {
+      "name": "mons/ps028.bin",
+      "bytes": 140679,
+      "sha256": "4c6e64446a34e85e3a9ad8ac5f5ed6cab0824315221279d61425e8df2e3aa579"
+    },
+    {
+      "name": "mons/ps029.bin",
+      "bytes": 109133,
+      "sha256": "7e47ee24e6d52f8107e71dde4ef36d8feb6b878929d0ed8fa848668dacb3f1ad"
+    },
+    {
+      "name": "mons/ps030.bin",
+      "bytes": 88321,
+      "sha256": "614d11f0e5c15a7a19ce885278bbcce0d6e81fb3d72a2d3739369fc0eb7970e4"
+    },
+    {
+      "name": "mons/ps031.bin",
+      "bytes": 104067,
+      "sha256": "d99c247130efde75ad21593df87c523b2957b2e44dbc61bd029f0ba08ad0f933"
+    },
+    {
+      "name": "mons/ps032.bin",
+      "bytes": 115589,
+      "sha256": "1c3a71852d9f42afc735ce13f6eda92a12d15015632b438d5e42bc5418fd9d94"
+    },
+    {
+      "name": "mons/ps033.bin",
+      "bytes": 142927,
+      "sha256": "0723ceda940680fa43bb391ae47f433a99c01a3bbcd89862951847ecebcc03fb"
+    },
+    {
+      "name": "mons/ps034.bin",
+      "bytes": 148233,
+      "sha256": "f1f8796faf72f6b66b27e77d55a465963b3dade29692303e7a3b069a9bf617be"
+    },
+    {
+      "name": "mons/ps035.bin",
+      "bytes": 107419,
+      "sha256": "2074538e11ee37ce6e2b67f15ef090ead01b87b2583b67cfbab2d553198b1cfc"
+    },
+    {
+      "name": "mons/ps036.bin",
+      "bytes": 121369,
+      "sha256": "451a182c8ba9679627f95be6d550e9866541b86c433dd8ef9d52f9be38117d26"
+    },
+    {
+      "name": "mons/ps037.bin",
+      "bytes": 117585,
+      "sha256": "038c8b7bf7b386ace0c48ebf694b037530e68e9ceedbe6984ec466134623189c"
+    },
+    {
+      "name": "mons/ps038.bin",
+      "bytes": 154703,
+      "sha256": "4e6173ce078abbd2383e1b20711bbdf9e2712b4b3b75e1fba1c0f63fc75e002f"
+    },
+    {
+      "name": "mons/ps039.bin",
+      "bytes": 132049,
+      "sha256": "0e243e7cffefcb7cff56aada4b329f7dfe1874afd399ef66b3414671abb37343"
+    },
+    {
+      "name": "mons/ps040.bin",
+      "bytes": 101513,
+      "sha256": "01c2c8acdeb3f819bc79e0a94f88b94c4537a1e4849885926c54d0428ea2cafc"
+    },
+    {
+      "name": "mons/ps041.bin",
+      "bytes": 142617,
+      "sha256": "25022ca6c0fc62edf7614800c286822f9897e24329c07d5830828d1cc92c3a8c"
+    },
+    {
+      "name": "mons/ps042.bin",
+      "bytes": 168017,
+      "sha256": "fe93289ba6a0e122cf47ef94bb991aa888ec7e5ff58132e52bf18fe61ee022fb"
+    },
+    {
+      "name": "mons/ps043.bin",
+      "bytes": 138841,
+      "sha256": "492093ed81b6aa76c9b41759091f149e3ca8b0c299993c3c8d3e3b23b2139520"
+    },
+    {
+      "name": "mons/ps044.bin",
+      "bytes": 133645,
+      "sha256": "c2259ccfab04b533cf8a7212bd304dae146558712e3bea7e68da4eefae54d35c"
+    },
+    {
+      "name": "mons/ps045.bin",
+      "bytes": 144989,
+      "sha256": "0b1ad9c9f8340381e43f99ef4fabb16ffa8233aa672eca2812f9678ea52986e1"
+    },
+    {
+      "name": "mons/ps046.bin",
+      "bytes": 98437,
+      "sha256": "652f32aeb9d4f553e7939225c795b1b50ec5f7807121efd4adc89e1ce3df8acd"
+    },
+    {
+      "name": "mons/ps047.bin",
+      "bytes": 146389,
+      "sha256": "15568af8a7e497bcb988dab06f08f66f663f7f05b0535a6b7c1473363a9a3a9a"
+    },
+    {
+      "name": "mons/ps048.bin",
+      "bytes": 144009,
+      "sha256": "f078a0a62fd69a6a5a5ba9b8dc722d0c1f72d49f583179b89472853eeccf79ec"
+    },
+    {
+      "name": "mons/ps049.bin",
+      "bytes": 186039,
+      "sha256": "b5d82ccfb5dac6ee3eba38b23eb41f0c2394bfbcf6dc98a999d00caf722dc4d6"
+    },
+    {
+      "name": "mons/ps050.bin",
+      "bytes": 54017,
+      "sha256": "9e721aba8970b14d477fdb235fac6dd08593bb1354a0cc7889f4deffb1cf47a8"
+    },
+    {
+      "name": "mons/ps051.bin",
+      "bytes": 90689,
+      "sha256": "9a8acb99fff66322ab5f663f669ec036c32e306ea4771b38e3f138df2024d8dc"
+    },
+    {
+      "name": "mons/ps052.bin",
+      "bytes": 103749,
+      "sha256": "62b2a53a2bee902fe5ba84fb32948b2760486be37aad94c56d3243bc1d458515"
+    },
+    {
+      "name": "mons/ps053.bin",
+      "bytes": 134533,
+      "sha256": "ff88e298a1f2e298cad2e3413192a0ffd0ffebb10abf1c82a479f8b4d4bf4ed2"
+    },
+    {
+      "name": "mons/ps054.bin",
+      "bytes": 104523,
+      "sha256": "70fceda5f9c56d985a0a9180fb1981baa7c3264f33a52be769ecc466497c91a8"
+    },
+    {
+      "name": "mons/ps055.bin",
+      "bytes": 137603,
+      "sha256": "498c4a5564453c4b8bf6cbe059a2999d3d54b7152a1ce83941c779317b0df0b0"
+    },
+    {
+      "name": "mons/ps056.bin",
+      "bytes": 150433,
+      "sha256": "8704ace05a3aa87d71838089131b80640ea7fe916f91ee1e03da09ee42496f58"
+    },
+    {
+      "name": "mons/ps057.bin",
+      "bytes": 138649,
+      "sha256": "bf1f9623865a65da07f4600d269a71367fa10caf35656e82a12c336e75e35db3"
+    },
+    {
+      "name": "mons/ps058.bin",
+      "bytes": 128913,
+      "sha256": "2703fcdff476905e016ace7c660b6946eda33e0cb8bb91dbb653ef4aed088eed"
+    },
+    {
+      "name": "mons/ps059.bin",
+      "bytes": 141635,
+      "sha256": "f91b2666b405df374a1281438244813346d92f62d51f38ed223962069417d72f"
+    },
+    {
+      "name": "mons/ps060.bin",
+      "bytes": 125899,
+      "sha256": "8f6c917e9c85a7f2fcc4917f22d309d4fd999430cb8f204f9f1977ed80ead361"
+    },
+    {
+      "name": "mons/ps061.bin",
+      "bytes": 105849,
+      "sha256": "94e574760765e53f38bf77f9f8839b96b3949716ce243422ccdfb18495e321a0"
+    },
+    {
+      "name": "mons/ps062.bin",
+      "bytes": 134263,
+      "sha256": "3dcc4ee076cb20eb33a0653d15f66fa9eaeb31a143f092eed89506791be236a6"
+    },
+    {
+      "name": "mons/ps063.bin",
+      "bytes": 148119,
+      "sha256": "6d70a44f3b539fc01a9c213e9dcb215614cac1abf2b32eec49baa5ab9f8d2e48"
+    },
+    {
+      "name": "mons/ps064.bin",
+      "bytes": 134605,
+      "sha256": "ff5e325948e2c20113cdd04892b21ce788a9e11a14b3cef7f89b3e90517dd5da"
+    },
+    {
+      "name": "mons/ps065.bin",
+      "bytes": 117389,
+      "sha256": "faf22f8593266e8f72ce69d84f7a66600b3b10cb1b86b98dac228da9b0256525"
+    },
+    {
+      "name": "mons/ps066.bin",
+      "bytes": 106543,
+      "sha256": "346cd584aaf723c1823b77a99ab35f651421736034ae8fddeffaaa97c3dd4e0e"
+    },
+    {
+      "name": "mons/ps067.bin",
+      "bytes": 135053,
+      "sha256": "155de17b9a843423f906e3a4feff3a614e45354e48d773f160bcad7f5a1ffde1"
+    },
+    {
+      "name": "mons/ps068.bin",
+      "bytes": 161109,
+      "sha256": "6178a041de9459dd2cf3fdb6f63b32bb8b7ddec88ef5eb92d1fe3c0344c2e84b"
+    },
+    {
+      "name": "mons/ps069.bin",
+      "bytes": 91007,
+      "sha256": "b26c83fefc76bb3d60caf4b719173c7104fe40aa89761a654c4ace420ffccdb8"
+    },
+    {
+      "name": "mons/ps070.bin",
+      "bytes": 99215,
+      "sha256": "a1804ceb28a49c7c9a5ff01df4937a444240ad53146aacb6e8ec4b30f8054e33"
+    },
+    {
+      "name": "mons/ps071.bin",
+      "bytes": 127635,
+      "sha256": "94ddaf0d1c315ee3742aeec8cfd0291fced8d2eff9ff44ca3e2c46d674087774"
+    },
+    {
+      "name": "mons/ps072.bin",
+      "bytes": 117009,
+      "sha256": "74d0532a5e09b8146f91afbb09f4eae606ff5aabec2a0bbea031f3a74b911d8e"
+    },
+    {
+      "name": "mons/ps073.bin",
+      "bytes": 122257,
+      "sha256": "ef1c13fc40003e70ec1169cfdd584a05d8d8d374070eb0fe1d7153c725276fd1"
+    },
+    {
+      "name": "mons/ps074.bin",
+      "bytes": 127623,
+      "sha256": "92885f4db709438acde0920c121e6a619f2e015fe0c6d9aa96ad397582be887b"
+    },
+    {
+      "name": "mons/ps075.bin",
+      "bytes": 144523,
+      "sha256": "fc0ee54194bd2fb2197678b58aef2d325bf7d53b3d4ac653652aa293f17afa11"
+    },
+    {
+      "name": "mons/ps076.bin",
+      "bytes": 134923,
+      "sha256": "751e01bb302dc599879bf55c39f70a9f508262bdb4a5b27ceaac6d77adeaf362"
+    },
+    {
+      "name": "mons/ps077.bin",
+      "bytes": 131869,
+      "sha256": "33709a801274e05059ecd9c77cd2d447b667b1afd373bec562310584f0396b2b"
+    },
+    {
+      "name": "mons/ps078.bin",
+      "bytes": 164121,
+      "sha256": "57478a4145c4245a9366c17d46969486a855e7d2698eae360fee2432836d870b"
+    },
+    {
+      "name": "mons/ps079.bin",
+      "bytes": 82313,
+      "sha256": "4e5e260d5ac6504bc053d008bdb366c2369bfd5acc3177d467d26c09daba7cd4"
+    },
+    {
+      "name": "mons/ps080.bin",
+      "bytes": 132503,
+      "sha256": "dad46e57f7516b32f8ac4ed1ec7788ef573e9da4c11babf24470d19867b4f2ba"
+    },
+    {
+      "name": "mons/ps081.bin",
+      "bytes": 140139,
+      "sha256": "d84b473d271f29b9c4f225d60b8688002bc5466531781da2d8c07828ba33ad67"
+    },
+    {
+      "name": "mons/ps082.bin",
+      "bytes": 122913,
+      "sha256": "9975801150f2fecf416f111b2ee7e09322ec8fcb06b5cba484aec3e114462428"
+    },
+    {
+      "name": "mons/ps083.bin",
+      "bytes": 105485,
+      "sha256": "c3edf155fa96ef695a431e858f97d8a98725e84a839d585ebc9566ae16878b36"
+    },
+    {
+      "name": "mons/ps084.bin",
+      "bytes": 135045,
+      "sha256": "e93c915a781e4a230d95c7c61ddbcd42eb93a1e43b6ecf019e9d0359ff9d8399"
+    },
+    {
+      "name": "mons/ps085.bin",
+      "bytes": 140439,
+      "sha256": "7c87475fd0bd1bfb2964800937c3b482a31ad1c924ed102f34603720a9eef682"
+    },
+    {
+      "name": "mons/ps086.bin",
+      "bytes": 113935,
+      "sha256": "2ba369ec74a3b133cc5e93f6d0ed398ec0a5bb733d4685afef087bd70543e13c"
+    },
+    {
+      "name": "mons/ps087.bin",
+      "bytes": 140301,
+      "sha256": "c0e8dec9cf1fbe05774f54a3ec8397c21b8fee730c5539a16a93c34007722b16"
+    },
+    {
+      "name": "mons/ps088.bin",
+      "bytes": 107021,
+      "sha256": "64f4473e48c4bcad932463ae1369efef05efd8181963dfea01f5277d7cb542ef"
+    },
+    {
+      "name": "mons/ps089.bin",
+      "bytes": 133253,
+      "sha256": "5632d7faf9d0065a098e76b636591ddc5922c9ed78d5e8c2e03d1ee556b3dc41"
+    },
+    {
+      "name": "mons/ps090.bin",
+      "bytes": 92557,
+      "sha256": "83a78515d43c0c324aeb23a71b399681df5a289178d82d4154634318e46b02ea"
+    },
+    {
+      "name": "mons/ps091.bin",
+      "bytes": 142871,
+      "sha256": "94b763ae6658f121207d2476f26f4cc06a8c231b6c4b5e13e969ca43ddf486aa"
+    },
+    {
+      "name": "mons/ps092.bin",
+      "bytes": 224435,
+      "sha256": "f7852c2377962e90e8abee2b3a0395b3ac74fb3b62ebcb2ee33d5efa2f1edcab"
+    },
+    {
+      "name": "mons/ps093.bin",
+      "bytes": 158883,
+      "sha256": "053caf7a036e98b68e508b9f6618c0b5d590f72be19b8e44b6bd85e0c53fb39e"
+    },
+    {
+      "name": "mons/ps094.bin",
+      "bytes": 145229,
+      "sha256": "4ee324049198cf5367903d650e250700b14f939e126ff4bea886b740141e80c3"
+    },
+    {
+      "name": "mons/ps095.bin",
+      "bytes": 492921,
+      "sha256": "6ef0e6dee2647972ef9a78e872443411b2b88de1779f0e3afc259f4b9c4418c8"
+    },
+    {
+      "name": "mons/ps096.bin",
+      "bytes": 120455,
+      "sha256": "97fea18a358190d7ff5527a655b8b72821224a7b8564434a4b67422018072a02"
+    },
+    {
+      "name": "mons/ps097.bin",
+      "bytes": 128515,
+      "sha256": "9b2a94ae0fdaf5bbd957b665d6467c101c58430b7ebbec82800d7dc3ec8720af"
+    },
+    {
+      "name": "mons/ps098.bin",
+      "bytes": 133381,
+      "sha256": "aa9aa3970bf548726c00b32c0e5aa416d614a901857a9526a9432d00fe80ee93"
+    },
+    {
+      "name": "mons/ps099.bin",
+      "bytes": 136071,
+      "sha256": "8a0edbbf66c929bc9c5d01863ee1129a53bad3d3e1fb25db674e495eb2cdfe1a"
+    },
+    {
+      "name": "mons/ps100.bin",
+      "bytes": 134941,
+      "sha256": "583cf3027750c9c60f36836df2944d8c14713d69bb5ba8cc4f89c199683588a6"
+    },
+    {
+      "name": "mons/ps101.bin",
+      "bytes": 107023,
+      "sha256": "b88e7a43d8407309a8008d282c599bf52fe99f79d2c669736e910c4130ea2ce3"
+    },
+    {
+      "name": "mons/ps102.bin",
+      "bytes": 93443,
+      "sha256": "62a75a06e45e6c947d31a26257531fff667f771639bf4b9b316da330b024375b"
+    },
+    {
+      "name": "mons/ps103.bin",
+      "bytes": 147335,
+      "sha256": "fb55f91e4d1c2667cd6ac15a9603551595e3ac9121f6d6304437500e25df96ec"
+    },
+    {
+      "name": "mons/ps104.bin",
+      "bytes": 115979,
+      "sha256": "d14bd1a3f82018933756da6a06b3864c7f36850b076ca4f409164bfd6c082547"
+    },
+    {
+      "name": "mons/ps105.bin",
+      "bytes": 109637,
+      "sha256": "3c61d3745198782964afe631330bfb2782989ceeec4a74fd07cb568f7357ba8b"
+    },
+    {
+      "name": "mons/ps106.bin",
+      "bytes": 117757,
+      "sha256": "e1037e73a13d040e5f2bdb8c3db522b2012cfc9c9a448e8b28197172eb4e80db"
+    },
+    {
+      "name": "mons/ps107.bin",
+      "bytes": 113805,
+      "sha256": "b5c9b9f1fba4197ca2a03e810c3b407ebce871fb27ba19fd60f944ffa7e75d59"
+    },
+    {
+      "name": "mons/ps108.bin",
+      "bytes": 137865,
+      "sha256": "4534607bf1c09553ac16efafa8ebb47ace1ef80c666d994de22dbc2c9efff702"
+    },
+    {
+      "name": "mons/ps109.bin",
+      "bytes": 177587,
+      "sha256": "fe4a2f869ce53d4fe979dcea6c34cbcb30c4f8abb9ffbb37acf400d0a8cf5e3c"
+    },
+    {
+      "name": "mons/ps110.bin",
+      "bytes": 158377,
+      "sha256": "8f15816903344eab9517798a2d6e391e3cf95690822881c02c0882fbbeabbbd9"
+    },
+    {
+      "name": "mons/ps111.bin",
+      "bytes": 90743,
+      "sha256": "e6626413e13a5fc8934138e99ea8898f85c81d52cdc0bcf88385097125489c85"
+    },
+    {
+      "name": "mons/ps112.bin",
+      "bytes": 133763,
+      "sha256": "b3cf4cdc252a369ab59465834fc2200e7a81737f0705fffca99603b8c926d9c8"
+    },
+    {
+      "name": "mons/ps113.bin",
+      "bytes": 88959,
+      "sha256": "1a0d195be07369447b8152bdb701d68839f0c6a5d5f2c4c0fcbbd8b03333cd9f"
+    },
+    {
+      "name": "mons/ps114.bin",
+      "bytes": 111625,
+      "sha256": "586723ca7734888aadca62f8dacaad2414737e524154ab61c017390e7df6fe4f"
+    },
+    {
+      "name": "mons/ps115.bin",
+      "bytes": 162511,
+      "sha256": "3ecb41eb0bb747f3520083120d92a84f453885ae7e7f24a175cd0978e1407a74"
+    },
+    {
+      "name": "mons/ps116.bin",
+      "bytes": 94983,
+      "sha256": "96ba09938ced68cd9bc06bd99037f24bfd66d0bfd5749d659a5c52ecf5bef5d9"
+    },
+    {
+      "name": "mons/ps117.bin",
+      "bytes": 144913,
+      "sha256": "929d99a531487f3a177dbfce314d25cf4469a85a2d25f41aa0839083d3ac8358"
+    },
+    {
+      "name": "mons/ps118.bin",
+      "bytes": 121513,
+      "sha256": "330ed361bd7c52cce600a68c430bd157ff6de7022396280e923cec182d22b3fc"
+    },
+    {
+      "name": "mons/ps119.bin",
+      "bytes": 133655,
+      "sha256": "0d29da4ab88ec12f15df46ba3c5938a4f8defa9164099f8491c92cf2e5226c2c"
+    },
+    {
+      "name": "mons/ps120.bin",
+      "bytes": 96525,
+      "sha256": "5011dd1bbafa1fb5be1973282b106227a39239a82a45df8e1344d1e538adc25f"
+    },
+    {
+      "name": "mons/ps121.bin",
+      "bytes": 108821,
+      "sha256": "81f56c9733478524f32b2424700532879bfa9593f188132c7f59d8f6964e52f8"
+    },
+    {
+      "name": "mons/ps122.bin",
+      "bytes": 121545,
+      "sha256": "45ba6684cf970f229f4c0f75d51d00fc1debb30d645d98897d0fdc7f1e1f75c1"
+    },
+    {
+      "name": "mons/ps123.bin",
+      "bytes": 126207,
+      "sha256": "794c4c616737346335501476a14e87beb59027b8345e0f31e2658e93dbf4c0e2"
+    },
+    {
+      "name": "mons/ps124.bin",
+      "bytes": 101893,
+      "sha256": "1a6658caa944e416a7df86cb486a4a10a9a4998d96040f5dc69fa115cd352edd"
+    },
+    {
+      "name": "mons/ps125.bin",
+      "bytes": 125955,
+      "sha256": "2c12ed038f8de60e66a6baf70d92eefbf01be2c541bb3173cec85120f246bb68"
+    },
+    {
+      "name": "mons/ps126.bin",
+      "bytes": 119297,
+      "sha256": "8799b90fd3b66dd5e8a786301ea07780cfa3ca01629caf5562d28e7b997cf5a5"
+    },
+    {
+      "name": "mons/ps127.bin",
+      "bytes": 113669,
+      "sha256": "d405ccbfa2c327cc92d38abc9fcc02b597b12d5040d8f831cbefa110eea8adea"
+    },
+    {
+      "name": "mons/ps128.bin",
+      "bytes": 156189,
+      "sha256": "4b595ae492161a4a682c25a20a23a203bae9d4d2340d73a4380210b7172165e5"
+    },
+    {
+      "name": "mons/ps129.bin",
+      "bytes": 120469,
+      "sha256": "bdb34a3e81a117c75e9996af261213df3eb791570d53a7e821b9ae0ebd33c23a"
+    },
+    {
+      "name": "mons/ps130.bin",
+      "bytes": 495503,
+      "sha256": "4d71009770b91f32ab94091696468881272e563669ecd9c994fda809450a852d"
+    },
+    {
+      "name": "mons/ps131.bin",
+      "bytes": 201357,
+      "sha256": "2e2c07d3f0a616378c7a89c8f851b6fd269f416a026ba92fda5aeef3138122cb"
+    },
+    {
+      "name": "mons/ps132.bin",
+      "bytes": 79349,
+      "sha256": "fc89dfb31ba58a7fdd8a6dc5a5802513e0c82bd7ad4b82c090ed31944e0cbc40"
+    },
+    {
+      "name": "mons/ps133.bin",
+      "bytes": 131213,
+      "sha256": "3b798e9d1039f61f6872096d141c91ef96c27dcde4cfd876df84c4d002869d98"
+    },
+    {
+      "name": "mons/ps134.bin",
+      "bytes": 139907,
+      "sha256": "dec325744d6a765b9a1a9ca1cadbdc3a0281dc6b6a56ce4bbd08d9361a40b993"
+    },
+    {
+      "name": "mons/ps135.bin",
+      "bytes": 126657,
+      "sha256": "afb7124893ad71256e724c509c9dc852142921a4f4131cff82c633797d2999f3"
+    },
+    {
+      "name": "mons/ps136.bin",
+      "bytes": 123655,
+      "sha256": "4bcaaefcacc86901170760531ced019f3fee1a1b62dc77ab345b3f2301bfccf5"
+    },
+    {
+      "name": "mons/ps137.bin",
+      "bytes": 94343,
+      "sha256": "476775581110c4b4f8704b348f6f9bd3158d2b66859ca89a33fa91ba3f162ab8"
+    },
+    {
+      "name": "mons/ps138.bin",
+      "bytes": 103929,
+      "sha256": "168fffd16f667a9fe2595c94ca5f1c7ca5497aaecf881eed107381fa36f0d686"
+    },
+    {
+      "name": "mons/ps139.bin",
+      "bytes": 124797,
+      "sha256": "4b1a34c8f672b1c94c53a5506f1f1fe195f778e262cd4d04f192bd99d0a495fd"
+    },
+    {
+      "name": "mons/ps140.bin",
+      "bytes": 84867,
+      "sha256": "7b8ad281525dabd282d7f0fe49bc8f2fc1f6f2cd8170b9b453cefb6ca8700506"
+    },
+    {
+      "name": "mons/ps141.bin",
+      "bytes": 123665,
+      "sha256": "854e5fc56ea1ad3fd1f32a2295afeadd539dd5a1eb52ac65f1a15380fc9bcaa2"
+    },
+    {
+      "name": "mons/ps142.bin",
+      "bytes": 149777,
+      "sha256": "1831df88e10234896514cce0d487f81ae262e2e2264b1e928463501bfbe73c00"
+    },
+    {
+      "name": "mons/ps143.bin",
+      "bytes": 119821,
+      "sha256": "805ea6538848487d403bfb8f82bd409b35babb913b9906dfa2241343d1e7fbac"
+    },
+    {
+      "name": "mons/ps144.bin",
+      "bytes": 346119,
+      "sha256": "a0612c473cd12489bddbd3045e8377500e019332794e2c5ede27d0471611e8e6"
+    },
+    {
+      "name": "mons/ps145.bin",
+      "bytes": 240265,
+      "sha256": "7efe9fc5a9e894cd2b7cb0c1d2264b37c4d44a7c7d4144706cd46289cc0089da"
+    },
+    {
+      "name": "mons/ps146.bin",
+      "bytes": 437257,
+      "sha256": "4fefe75dbeb8e880aca1d3229d2e29c7fccb7e012ce42a11a1929969f8a8a420"
+    },
+    {
+      "name": "mons/ps147.bin",
+      "bytes": 104705,
+      "sha256": "42bfed88d2baa46f041c9ad26746470430e181c0f251ab8a7c609feb18d180af"
+    },
+    {
+      "name": "mons/ps148.bin",
+      "bytes": 179737,
+      "sha256": "cd05fe04a612c70338b68164c97d06e2e3c5ea3ddeb182890fc6fbe2838a2517"
+    },
+    {
+      "name": "mons/ps149.bin",
+      "bytes": 161939,
+      "sha256": "eb4157a6e46c195944ac09fd65cc16037a92a39e07cb81887855d81d3883d72b"
+    },
+    {
+      "name": "mons/ps150.bin",
+      "bytes": 211921,
+      "sha256": "c524db2986c749e5fef689f3d14132d5926d95e40296b353c452ffd90bf7557c"
+    },
+    {
+      "name": "mons/ps151.bin",
+      "bytes": 198421,
+      "sha256": "12a8559cb274cf7a24d2e104023ed2a367cc70190f36df33967ab83cdbc401b2"
+    },
+    {
+      "name": "mons/thumbs.bin",
+      "bytes": 169311,
+      "sha256": "c8e03dffd0d4a570f3663eac38b4959f7794340544f882c4f2ef5d26ef01bc3e"
+    }
+  ],
+  "embedded_25_26_match": true,
+  "license": "PMD SpriteCollab artwork, CC BY-NC 4.0; see THIRD_PARTY_NOTICES.md"
+}

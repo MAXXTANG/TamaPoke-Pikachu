@@ -4,7 +4,7 @@
   "firmware_changed": false,
   "factory_sha256": "c3a9322abf99bde35e127f2ff6e3f1a8a55e9d658a664b807df6dc0f39b29e3b",
   "web_serial_tests": {
-    "passed": 10,
+    "passed": 23,
     "hardware": "automated tests use simulated port replies; separate real USB run linked below"
   },
   "browser_checks": {
@@ -37,5 +37,6 @@
   "physical_web_flash_test": "passed: public website factory install and Pikachu activation on original Waveshare 1.75, macOS Chrome",
   "factory_image_full_flash_tested": true,
   "historical_application_device_checks": "preserved in evidence/device-verification.json",
-  "physical_test_evidence": "evidence/hardware-web-validation-2026-11-23.json"
+  "physical_test_evidence": "evidence/hardware-web-validation-2026-11-23.json",
+  "full_sprite_mode_evidence": "evidence/web-sprite-validation-2026-11-23.json"
 }

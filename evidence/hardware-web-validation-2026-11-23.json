@@ -104,7 +104,12 @@
     "selection_command_sent_after_reset": false
   },
   "end_state": "fresh Pikachu level 1, retained at the user request",
-  "display_and_touch": "awaiting user visual and touch confirmation; not inferred from serial replies",
+  "display_and_touch": {
+    "passed": true,
+    "source": "user confirmation on the physical board",
+    "date": "2026-11-23",
+    "report": "皮卡丘畫面與觸控都正常"
+  },
   "scope_limits": [
     "one physical board and macOS Chrome",
     "no Windows or Edge physical run",

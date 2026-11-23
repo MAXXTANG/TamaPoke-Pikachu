@@ -54,7 +54,9 @@
 
     <section id="install" class="install-section">
       <div class="section-wrap">
-        <div class="section-heading"><p class="eyebrow">用 USB 帶牠回家</p><h2>兩步完成，接著就能玩。</h2><p>全新安裝會重設板上原有的程式與遊戲進度。先確認型號，再依序完成下面兩步。</p></div>
+        <div class="section-heading"><p class="eyebrow">用 USB 帶牠回家</p><h2 id="install-heading">兩步完成，接著就能玩。</h2><p>全新安裝會重設板上原有的程式與遊戲進度。先選擇需要的素材，再依序操作。</p></div>
+        <fieldset class="install-modes"><legend>你想安裝哪一種？</legend><label><input id="mode-basic" name="install-mode" type="radio" value="basic" checked><span><strong>先玩皮卡丘</strong><small>不用記憶卡 · 內建皮卡丘／雷丘動畫</small></span></label><label><input id="mode-full" name="install-mode" type="radio" value="full"><span><strong>完整 151 隻素材</strong><small>需要 microSD · 一般／異色動畫與圖鑑縮圖</small></span></label></fieldset>
+        <p id="existing-game-note" class="install-help" hidden>已經在玩本版遊戲？<a href="#sprite-step">直接載入記憶卡素材</a>，不用重刷或清除進度。</p>
         <p id="browser-note" class="notice" role="status" hidden></p>
         <div class="install-grid">
           <article class="install-card">
@@ -72,7 +74,19 @@
             <p id="activation-status" class="activation-status" role="status" aria-live="polite">完成刷入後，按這裡啟用角色。</p>
           </article>
         </div>
-        <div id="setup-complete" class="setup-complete" hidden><strong>皮卡丘已準備好。</strong><p>如果裝置有電池，現在就能拔除 USB；沒有電池時保持 USB 供電。接著看下面的日常照顧方式。</p><a href="#play">開始認識遊戲</a></div>
+        <div id="setup-complete" class="setup-complete" hidden><strong>皮卡丘已準備好。</strong><p id="setup-next">如果裝置有電池，現在就能拔除 USB；沒有電池時保持 USB 供電。接著看下面的日常照顧方式。</p><a href="#play">開始認識遊戲</a></div>
+        <article id="sprite-step" class="install-card sprite-card" hidden>
+          <span class="step-label">步驟 3 · 完整素材模式</span><h3>把 151 隻素材放進記憶卡</h3>
+          <p>兩種模式使用相同的遊戲韌體。完整模式會另外透過 USB，把 151 隻的一般／異色動畫與圖鑑縮圖傳入 microSD，共 303 個檔案。預留約 10–15 分鐘，實際依電腦與卡片而異。</p>
+          <p><strong>已有本版皮卡丘？不用再刷韌體，可直接完成這一步，保留目前角色與進度。</strong></p>
+          <p class="notice"><strong>先備份卡片內容。</strong>目前韌體在卡片無法掛載時可能自動格式化；請使用可清空的卡片，FAT32、至少約 64 MB 可用空間。先關機、插卡，再接上 USB；請勿在傳輸中拔卡。</p>
+          <ol><li>關閉刷機視窗。第一次安裝先完成上面兩步；已有本版遊戲可直接載入素材。</li><li>勾選卡片確認，再按「載入全部 151 隻素材」。網頁會先檢查卡片與空間。</li><li>等到完成；沒有電池時保持 USB 供電。重新開機讓圖鑑縮圖載入。</li></ol>
+          <div class="checks"><label><input id="sd-consent" type="checkbox"><span>我已備份 microSD、同意它可被格式化，且可覆寫卡內的寶可夢素材檔。</span></label></div>
+          <div class="sprite-actions"><button id="load-sprites-button" class="button primary" type="button" disabled>載入全部 151 隻素材</button><button id="stop-sprites-button" class="button outline" type="button" hidden>停止傳輸</button></div>
+          <div id="sprite-progress-wrap" class="sprite-progress-wrap" hidden><progress id="sprite-progress" value="0" max="100" aria-label="完整素材傳輸進度"></progress><p id="sprite-progress-text">準備中</p></div>
+          <p id="sprite-status" class="activation-status" role="status" aria-live="polite">尚未開始。沒有讀到記憶卡時，網頁會停止，不會改寫角色或存檔。</p>
+          <p class="small-copy">傳輸中請保持 USB 供電、電腦不要休眠。停止會先完成目前檔案；中斷後重新載入會再傳全部檔案。素材包有 SHA-256 校驗，完成後另核對卡內檔名與大小。<a href="https://github.com/MAXXTANG/TamaPoke-Pikachu/blob/main/docs/FULL_SPRITES.md">查看記憶卡教學與驗證範圍</a>。</p>
+        </article>
         <p class="install-help">找不到裝置、連接埠忙碌或刷機失敗？<a href="#faq">先看排解方法</a>。已有存檔、想保留進度更新的使用者，請看 <a href="https://github.com/MAXXTANG/TamaPoke-Pikachu#進階更新與重建">進階更新方式</a>。</p>
       </div>
     </section>
@@ -104,13 +118,13 @@
       <details><summary>選擇裝置的視窗是空的，或沒有 USB 裝置？</summary><p>先換一條確定可以傳資料的 USB 線，直接接電腦，避免先經過集線器。確認開發板有供電。仍沒有裝置時，可依微雪官方板卡文件進入 BOOT 下載模式，再回來重試。</p></details>
       <details><summary>顯示連接埠忙碌，或啟用皮卡丘時沒有回覆？</summary><p>同一個 USB 連接埠一次只能由一個程式使用。關閉刷機彈窗、其他網頁的序列埠連線、Arduino 序列監控等程式，再按「連接並啟用皮卡丘」。若裝置剛重開，等三秒再試。</p></details>
       <details><summary>刷完還是御三家選角或蛋，怎麼辦？</summary><p>保留 USB 連接，完成上面的第二步「連接並啟用皮卡丘」。它會直接設定 #25 並存檔，不需要自己輸入任何指令。</p></details>
-      <details><summary>沒有 microSD，可以玩嗎？151 隻都內建嗎？</summary><p>可以玩皮卡丘。本版內建 #25 皮卡丘與 #26 雷丘的一般／異色動畫，#1–9 另有簡單備用圖。其他角色動畫及完整圖鑑縮圖需要相應的 microSD 素材，這個刷機流程不會自動載入 151 隻素材。</p></details>
+      <details><summary>沒有 microSD，可以玩嗎？151 隻都內建嗎？</summary><p>可以玩皮卡丘。本版內建 #25 皮卡丘與 #26 雷丘的一般／異色動畫，#1–9 另有簡單備用圖。選「完整 151 隻素材」可多做記憶卡載入步驟，把完整動畫與圖鑑縮圖透過 USB 傳入 microSD；不用更換韌體，也不會直接解鎖全部圖鑑紀錄。</p></details>
       <details><summary>螢幕變暗或關掉，是不是當機？</summary><p>AMOLED 閒置後會自動降低亮度，先點一下喚醒。短按 PWR 也可切換螢幕。若確實全黑且無回應，檢查供電、完整板型及刷機是否完成，再依官方板卡說明重新啟動。</p></details>
       <details><summary>拔掉 USB 後就關機？</summary><p>開發板沒有裝電池時，需要 USB 持續供電。只有接妥相容電池時，才可以拔掉 USB 繼續玩。</p></details>
       <details><summary>可以用中文玩嗎？</summary><p>教學與刷機頁是繁體中文。裝置遊戲本身目前提供英、西、法、德、義、葡、日、韓八種語言，預設英文，沒有中文選項。</p></details>
       <details><summary>時間不對，或一直是晚上？</summary><p>網頁啟用時會同步電腦的當地時間。也可以主畫面向下滑，調整小時和分鐘，再按 OK。想讓角色睡覺仍要按燈泡；夜景與睡眠是兩件事。</p></details>
       <details><summary>長按 PWR 與短按有什麼不同？</summary><p>這款原版 1.75 板短按是切換螢幕，長按約四秒是關機。1.75C 的三連按鎖屏等操作不適用這一版。</p></details>
-      <details><summary>目前哪些部分已驗證？</summary><p>2026-11-23 已用 macOS Chrome 與微雪原版 1.75 板，從此公開網頁完成全新刷機、啟用 Lv.1 皮卡丘；無 microSD，硬體重開機後角色仍保存且動畫載入成功，板上韌體雜湊也符合保存版本。<a href="https://github.com/MAXXTANG/TamaPoke-Pikachu/blob/main/docs/HARDWARE_TEST.md">查看實測紀錄與操作截圖</a>。Windows、Edge、電池斷電續玩與完整 SD 素材未在這輪實測。遊戲圖是程式渲染示例。</p></details>
+      <details><summary>目前哪些部分已驗證？</summary><p>2026-11-23 已用 macOS Chrome 與微雪原版 1.75 板，從此公開網頁完成全新刷機、啟用 Lv.1 皮卡丘；無 microSD，硬體重開機後角色仍保存且動畫載入成功，板上韌體雜湊也符合保存版本；使用者另確認皮卡丘畫面與觸控都正常。<a href="https://github.com/MAXXTANG/TamaPoke-Pikachu/blob/main/docs/HARDWARE_TEST.md">查看實測紀錄與操作截圖</a>。Windows、Edge、電池斷電續玩與完整 SD 素材未在這輪實測。遊戲圖是程式渲染示例。</p></details>
     </section>
   </main>
 

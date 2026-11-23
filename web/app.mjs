@@ -1,15 +1,33 @@
 import { activatePikachu } from "./serial-client.mjs";
+import { loadAllSprites } from "./sprite-pack.mjs";
 
 const $ = (selector) => document.querySelector(selector);
 const browserSupported = "serial" in navigator && window.isSecureContext;
 let verified = false;
 let installerReady = false;
 let activating = false;
+let loadingSprites = false;
+let spriteController;
 
 function updateButtons() {
-  $("#install-button").disabled = !browserSupported || !verified || !installerReady || !$("#correct-board").checked || !$("#erase-consent").checked;
-  $("#activate-button").disabled = !browserSupported || activating;
+  const busy = activating || loadingSprites;
+  $("#install-button").disabled = !browserSupported || busy || !verified || !installerReady || !$("#correct-board").checked || !$("#erase-consent").checked;
+  $("#activate-button").disabled = !browserSupported || busy;
+  $("#load-sprites-button").disabled = !browserSupported || busy || !$("#sd-consent").checked;
+  for (const input of document.querySelectorAll("input[name=install-mode], #sd-consent")) input.disabled = busy;
+  $("#stop-sprites-button").hidden = !loadingSprites;
 }
+
+function updateMode() {
+  const full = $("#mode-full").checked;
+  $("#sprite-step").hidden = !full;
+  $("#existing-game-note").hidden = !full;
+  $("#install-heading").textContent = full ? "三步完成，收齊完整素材。" : "兩步完成，接著就能玩。";
+  $("#setup-next").textContent = full ? "皮卡丘已可遊玩。接著完成下面的記憶卡素材載入；沒有電池時保持 USB 供電。" : "如果裝置有電池，現在就能拔除 USB；沒有電池時保持 USB 供電。接著看下面的日常照顧方式。";
+}
+for (const input of document.querySelectorAll("input[name=install-mode]")) input.addEventListener("change", updateMode);
+$("#sd-consent").addEventListener("change", updateButtons);
+updateMode();
 
 if (!browserSupported) {
   $("#browser-note").hidden = false;
@@ -60,6 +78,45 @@ $("#activate-button").addEventListener("click", async () => {
     activating = false;
     updateButtons();
   }
+});
+
+$("#load-sprites-button").addEventListener("click", async () => {
+  if (loadingSprites || activating) return;
+  loadingSprites = true;
+  spriteController = new AbortController();
+  updateButtons();
+  const status = $("#sprite-status");
+  status.dataset.state = "working";
+  $("#sprite-progress-wrap").hidden = false;
+  $("#sprite-progress").value = 0;
+  $("#sprite-progress-text").textContent = "正在檢查開發板與記憶卡…";
+  let lastPercent = -1;
+  try {
+    await loadAllSprites({
+      serialApi: navigator.serial,
+      signal: spriteController.signal,
+      onStatus: (message) => { status.textContent = message; },
+      onProgress: ({ bytes, totalBytes, files, totalFiles }) => {
+        const percent = Math.floor(bytes / totalBytes * 1000) / 10;
+        if (percent === lastPercent && files !== totalFiles) return;
+        lastPercent = percent;
+        $("#sprite-progress").value = percent;
+        $("#sprite-progress-text").textContent = `${percent.toFixed(1)}% · ${files}/${totalFiles} 個檔案已確認`;
+      },
+    });
+    status.dataset.state = "success";
+  } catch (error) {
+    status.dataset.state = error.name === "AbortError" ? "stopped" : "error";
+    status.textContent = error.name === "NotFoundError" ? "尚未選擇開發板。接好 USB 後，再按一次並選擇裝置即可。" : error.name === "AbortError" ? "已停止；素材尚未全部完成。下次載入會重新傳送全部檔案，不需要重刷遊戲。" : error.message;
+  } finally {
+    loadingSprites = false;
+    spriteController = null;
+    updateButtons();
+  }
+});
+$("#stop-sprites-button").addEventListener("click", () => {
+  spriteController?.abort();
+  $("#sprite-status").textContent = "正在停止；會先完成目前檔案，再釋放 USB 連線，請保持連接。";
 });
 
 const screens = [

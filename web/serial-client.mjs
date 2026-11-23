@@ -81,6 +81,36 @@ export class DeviceConnection {
     }
   }
 
+  async put(name, bytes, onChunk = () => {}) {
+    if (this.busy) throw new Error("正在處理上一個操作，請稍候。");
+    if (!/^mons\/(?:ps?\d{3}|thumbs)\.bin$/.test(name) || !bytes.length || bytes.length > 4 * 1024 * 1024) {
+      throw new Error("素材檔案的名稱或大小不正確。");
+    }
+    this.busy = true;
+    const expect = async (token) => {
+      const deadline = Date.now() + this.timeout;
+      while (Date.now() < deadline) {
+        const line = await this.line(Math.max(1, deadline - Date.now()));
+        if (line === "ERR") throw new Error("記憶卡寫入失敗。請確認卡片空間與狀態，重新開機後再載入素材。");
+        if (line === token) return;
+      }
+      throw new Error("素材傳輸逾時，請重新開機後再載入。");
+    };
+    try {
+      await this.writer.write(new TextEncoder().encode(`PUT ${name} ${bytes.length}\n`));
+      await expect("OK");
+      for (let offset = 0; offset < bytes.length; offset += 2048) {
+        const chunk = bytes.subarray(offset, offset + 2048);
+        await this.writer.write(chunk);
+        await expect("#");
+        onChunk(chunk.length);
+      }
+      await expect("DONE");
+    } finally {
+      this.busy = false;
+    }
+  }
+
   async close() {
     this.closed = true;
     if (this.reader) {
@@ -99,7 +129,7 @@ export function localClockEpoch(date = new Date()) {
   return Math.floor(date.getTime() / 1000) - date.getTimezoneOffset() * 60;
 }
 
-export async function activatePikachu({ serialApi, onStatus = () => {}, date = new Date(), timeout = 6000 }) {
+export async function selectBoardPort(serialApi, onStatus = () => {}) {
   if (!serialApi) throw new Error("請使用電腦版 Chrome 或 Edge 開啟本頁。");
   onStatus("正在尋找剛刷機時已授權的開發板。");
   const granted = typeof serialApi.getPorts === "function" ? await serialApi.getPorts() : [];
@@ -112,6 +142,11 @@ export async function activatePikachu({ serialApi, onStatus = () => {}, date = n
     onStatus("請在跳出的視窗選擇 USB JTAG/serial debug unit。");
     port = await serialApi.requestPort({ filters: [{ usbVendorId: 0x303a }] });
   }
+  return port;
+}
+
+export async function activatePikachu({ serialApi, onStatus = () => {}, date = new Date(), timeout = 6000 }) {
+  const port = await selectBoardPort(serialApi, onStatus);
   const connection = new DeviceConnection(port, { timeout });
   try {
     await connection.open();
