@@ -107,6 +107,7 @@ $("#load-sprites-button").addEventListener("click", async () => {
     status.dataset.state = "success";
   } catch (error) {
     status.dataset.state = error.name === "AbortError" ? "stopped" : "error";
+    $("#sprite-progress-text").textContent = "素材尚未完成，可依提示重新載入。";
     status.textContent = error.name === "NotFoundError" ? "尚未選擇開發板。接好 USB 後，再按一次並選擇裝置即可。" : error.name === "AbortError" ? "已停止；素材尚未全部完成。下次載入會重新傳送全部檔案，不需要重刷遊戲。" : error.message;
   } finally {
     loadingSprites = false;

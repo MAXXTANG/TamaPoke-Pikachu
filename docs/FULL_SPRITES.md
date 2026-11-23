@@ -51,6 +51,8 @@
 
 ## 驗證範圍與素材來源
 
-完整包的 303 個檔案與每檔 SHA-256 已離線核對，Pikachu／Raichu 素材與本版內建資料相同。新增載入程式的自動測試使用模擬序列埠；**完整 microSD 寫入仍待插卡實測**。已完成的網頁刷機、無卡皮卡丘啟用、重開機存檔和使用者畫面／觸控確認，見 [實機紀錄](HARDWARE_TEST.md)。
+完整包的 303 個檔案與每檔 SHA-256 已離線核對，Pikachu／Raichu 素材與本版內建資料相同。新增載入程式的自動測試使用模擬序列埠；另用原版開發板與公開網頁實測缺卡情況，確實在下載／寫入素材前停止。**完整 microSD 寫入仍待插卡實測**。已完成的網頁刷機、無卡皮卡丘啟用、重開機存檔和使用者畫面／觸控確認，見 [實機紀錄](HARDWARE_TEST.md)。
+
+![開發板未插卡時，網頁在寫入前停止](images/full-sprite-no-card.jpg)
 
 素材來自 [TamaPoke 官方素材包](https://socquique.github.io/TamaPoke/web/)，原圖為 PMD SpriteCollab 社群作品，保留 CC BY-NC 4.0 署名及非商業條件；Pokémon © Nintendo / Game Freak / The Pokémon Company。下載包與逐檔紀錄見 [full-sprite-pack.json](../evidence/full-sprite-pack.json)，授權見 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。

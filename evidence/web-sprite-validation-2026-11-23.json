@@ -14,12 +14,11 @@
     "transport": "simulated Web Serial with fragmented responses and per-block ACKs"
   },
   "browser_checks": {
-    "browser": "Chrome",
-    "basic_mode_is_default": true,
-    "full_mode_reveals_extra_step": true,
-    "existing_game_skip_link": true,
-    "load_disabled_until_card_consent": true,
-    "no_physical_card_transfer_performed": true
+    "basic_mode_hides_extra_step": true,
+    "full_mode_shows_extra_step": true,
+    "storage_consent_gate": true,
+    "console_errors_observed": 0,
+    "source_mode_screenshot": "docs/images/full-sprite-mode.jpg"
   },
   "physical_full_pack_transfer_tested": false,
   "card_file_verification": "firmware acknowledges each 2048-byte block and final DONE; final LS checks filenames and lengths, not card-side SHA-256",
@@ -28,5 +27,16 @@
     "docs/images/full-sprite-mode.jpg",
     "docs/images/full-sprite-step.jpg"
   ],
-  "scope": "Complete SD transfer and post-reboot SD sprites still require a physical card test. Previous no-SD Pikachu flash/reboot and user display/touch confirmation remain documented separately."
+  "scope": "Complete SD transfer and post-reboot SD sprites still require a physical card test. Previous no-SD Pikachu flash/reboot and user display/touch confirmation remain documented separately.",
+  "physical_no_card_preflight": {
+    "passed": true,
+    "site": "https://maxxtang.github.io/TamaPoke-Pikachu/",
+    "tested_commit": "c4ed20178a4e485f4179cf0da98377ff9c72dc09",
+    "browser": "Chrome",
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-1.75 original",
+    "device_sd_ready": false,
+    "observed_result": "No microSD message before download or PUT; no character or clock commands in this workflow",
+    "screenshot": "docs/images/full-sprite-no-card.jpg"
+  },
+  "physical_full_pack_transfer": false
 }
