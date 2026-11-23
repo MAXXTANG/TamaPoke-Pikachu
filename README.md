@@ -70,7 +70,7 @@ d5da1d790d8794f92d8db0ff8cbbcffaaeb5ca0e3b7642451944a94e2133edbe
 - 保存的應用程式已在相容板完成寫入校驗、啟動、無 microSD 皮卡丘載入與重開機存檔檢查。
 - 原有 162 項主機遊戲測試與 sanitizer 檢查通過。
 - 網頁另檢查 Web Serial 狀態辨識、取消、逾時、錯誤復原與當地時間換算，以及檔案／圖片完整性。
-- 本次未連接實體開發板，經由此網站整包刷機與啟用的 USB 實機驗證仍待補上。
+- 2026-11-23 已用 macOS Chrome 與原版微雪 1.75 板，完成公開網頁全新刷機、啟用 Lv.1 皮卡丘及硬體重開機存檔驗證；無 microSD，內建動畫載入成功。板上 bootloader、分割表與 app 雜湊均符合保存映像。見 [實機測試與操作截圖](docs/HARDWARE_TEST.md)。
 - 遊戲圖由 `tools/render_ui.py` 擷取實際繪圖程式、配合主機 RGB565 繪圖轉接器產生。示例值不是個人存檔，圖片來源見 `web/assets/screens/provenance.json`。
 - `docs/images/` 為實際網頁介面截圖。
 

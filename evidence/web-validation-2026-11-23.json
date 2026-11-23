@@ -4,8 +4,8 @@
   "firmware_changed": false,
   "factory_sha256": "c3a9322abf99bde35e127f2ff6e3f1a8a55e9d658a664b807df6dc0f39b29e3b",
   "web_serial_tests": {
-    "passed": 7,
-    "hardware": "simulated port replies; no physical USB board attached"
+    "passed": 10,
+    "hardware": "automated tests use simulated port replies; separate real USB run linked below"
   },
   "browser_checks": {
     "browser": "Chrome",
@@ -30,9 +30,12 @@
     "docs/images/web-home.jpg",
     "docs/images/web-installer.jpg",
     "docs/images/web-mobile.jpg",
-    "docs/images/game-interface-gallery.jpg"
+    "docs/images/game-interface-gallery.jpg",
+    "docs/images/hardware-web-install-complete.jpg",
+    "docs/images/hardware-pikachu-activated.jpg"
   ],
-  "physical_web_flash_test": "not performed: no board attached",
-  "factory_image_full_flash_tested": false,
-  "historical_application_device_checks": "preserved in evidence/device-verification.json"
+  "physical_web_flash_test": "passed: public website factory install and Pikachu activation on original Waveshare 1.75, macOS Chrome",
+  "factory_image_full_flash_tested": true,
+  "historical_application_device_checks": "preserved in evidence/device-verification.json",
+  "physical_test_evidence": "evidence/hardware-web-validation-2026-11-23.json"
 }

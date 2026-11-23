@@ -15,7 +15,7 @@
 | 檔案 | 燒錄位址 | 用途與驗證 |
 | --- | --- | --- |
 | `firmware/tamapoke-1.19-pika-app.bin` | `0x10000` | 本次實際刷入的檔案；寫入雜湊校驗、開機及重開機後角色保存已驗證。適用已有相同 TamaPoke 分割表的板子。 |
-| `firmware/tamapoke-1.19-pika-factory.bin` | `0x0` | 原版 v1.19 開機區與分割表，加上相同自訂應用程式；供全新安裝。這個整合檔尚未整包重刷驗證。 |
+| `firmware/tamapoke-1.19-pika-factory.bin` | `0x0` | 原版 v1.19 開機區與分割表，加上相同自訂應用程式；供全新安裝。2026-11-23 已從公開網頁整包刷入並核對板上雜湊。 |
 | `firmware/SHA256SUMS` | — | 兩個韌體檔的 SHA-256。 |
 
 實機驗證的應用程式 SHA-256：
@@ -97,6 +97,7 @@ bash tools/build.sh
 - 實際重開機後仍為 #25，內建圖像再次載入成功。
 - 162 項主機遊戲測試通過；同一套測試在 AddressSanitizer 與 UndefinedBehaviorSanitizer 下亦通過。
 - 原版畫面與觸控已由使用者確認；皮卡丘修改版的目視畫面與觸控狀態仍待使用者回報。
+- 2026-11-23：公開網頁全新安裝、網頁啟用皮卡丘、硬體重開機存檔及 bootloader／分割表／app 裝置 MD5 比對均通過，見 [USB 實機測試](HARDWARE_TEST.md)。
 
 詳細資訊見 `evidence/`。`STATS` 的 `mon` 僅代表舊圖像載入器；本版動畫是否載入應參考 `HEALTH` 的 `mon=1`。
 

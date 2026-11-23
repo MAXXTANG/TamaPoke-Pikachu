@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-23",
+  "site": "https://maxxtang.github.io/TamaPoke-Pikachu/",
+  "activation_source_commit": "ef01198",
+  "firmware_version": "1.19-pika",
+  "firmware_changed": false,
+  "factory_sha256": "c3a9322abf99bde35e127f2ff6e3f1a8a55e9d658a664b807df6dc0f39b29e3b",
+  "environment": {
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-1.75 original",
+    "host": "macOS",
+    "browser": "Chrome",
+    "flash_bytes": 16777216,
+    "psram_bytes": 8388608,
+    "microSD": false,
+    "power": "USB"
+  },
+  "before_flash_backup": {
+    "size_bytes": 16777216,
+    "whole_device_md5_verified": true,
+    "method": "device-verified deduplicated blocks; unmatched blocks read in 4096-byte chunks",
+    "publicly_uploaded": false
+  },
+  "factory_web_flash": {
+    "passed": true,
+    "method": "ESP Web Tools from the public website",
+    "completion_screenshot": "docs/images/hardware-web-install-complete.jpg",
+    "device_after_flash": {
+      "spec": -1,
+      "nv": 1,
+      "com": 80,
+      "fel": 80,
+      "ene": 80,
+      "lim": 100,
+      "desc": 0,
+      "sd": 0
+    },
+    "pokedex": "pokedex 0/151:"
+  },
+  "web_activation": {
+    "passed": true,
+    "method": "public website button; reused one previously authorized Espressif port",
+    "completion_screenshot": "docs/images/hardware-pikachu-activated.jpg",
+    "device_after_activation": {
+      "spec": 25,
+      "nv": 1,
+      "com": 80,
+      "fel": 80,
+      "ene": 80,
+      "lim": 100,
+      "desc": 0,
+      "sd": 0
+    },
+    "health": "up=595s heap=293912 min=293804 sd=0 mon=1",
+    "pokedex": "pokedex 1/151: 25",
+    "clock": "local wall clock synchronized by web TIME command"
+  },
+  "flash_readback": {
+    "checked_at": "2026-11-23T20:06:47.617656+08:00",
+    "method": "esptool flash MD5, read-only; temporary RAM stub; no flash writes",
+    "checks": [
+      {
+        "region": "bootloader_region",
+        "offset": "0x0",
+        "length": 32768,
+        "expected_md5": "a615a50a8b729566f98111eaf7cd33cf",
+        "device_md5": "a615a50a8b729566f98111eaf7cd33cf",
+        "match": true
+      },
+      {
+        "region": "partition_table",
+        "offset": "0x8000",
+        "length": 4096,
+        "expected_md5": "e26072f13a22f8f614b8e8b48bd41d7a",
+        "device_md5": "e26072f13a22f8f614b8e8b48bd41d7a",
+        "match": true
+      },
+      {
+        "region": "application",
+        "offset": "0x10000",
+        "length": 1471920,
+        "expected_md5": "6df220b27e69439f4fc5d82096b00a87",
+        "device_md5": "6df220b27e69439f4fc5d82096b00a87",
+        "match": true
+      }
+    ],
+    "all_match": true
+  },
+  "hardware_reboot": {
+    "passed": true,
+    "method": "esptool ESP32-S3 hard_reset via USB; no flash writes",
+    "reset_at": "2026-11-23T20:07:10.901108+08:00",
+    "device_after_reboot": {
+      "spec": 25,
+      "nv": 1,
+      "com": 80,
+      "fel": 80,
+      "ene": 80,
+      "lim": 100,
+      "desc": 0,
+      "sd": 0
+    },
+    "health": "up=4s heap=293912 min=293804 sd=0 mon=1",
+    "pokedex": "pokedex 1/151: 25",
+    "selection_command_sent_after_reset": false
+  },
+  "end_state": "fresh Pikachu level 1, retained at the user request",
+  "display_and_touch": "awaiting user visual and touch confirmation; not inferred from serial replies",
+  "scope_limits": [
+    "one physical board and macOS Chrome",
+    "no Windows or Edge physical run",
+    "no battery power removal run",
+    "no microSD full sprite-pack run",
+    "game UI gallery remains host-rendered examples, not physical photographs"
+  ],
+  "privacy": "device MAC, serial identifier, private backup and previous save omitted"
+}
